@@ -1,0 +1,63 @@
+nav{
+	position: absolute;
+	height: 100%;
+	width: 70px;
+	background-color: #878787;
+	z-index: 100;
+}
+
+nav .logo{
+	position: relative;
+	margin: 20px auto 50px;
+	width: 60px;
+}
+nav .menu li{
+	width: 100%;
+	height: 30px;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+nav .menu li a{
+	position: relative;
+}
+nav .menu li span{
+	position: absolute;
+	left: 20px;
+	width: 30px;
+	height: 30px;
+	background-size: 100% 100%;
+}
+.i_home{background-image: url(../images/nav/i_home.png);}
+.i_us{background-image: url(../images/nav/i_us.png);}
+.i_service{background-image: url(../images/nav/i_service.png);}
+.i_project{background-image: url(../images/nav/i_project.png);}
+.i_words{background-image: url(../images/nav/i_words.png);}
+.i_connect{background-image: url(../images/nav/i_connect.png);}
+.i_join{background-image: url(../images/nav/i_join.png);}
+
+
+nav .menu li p{
+    position: relative;
+    margin-left: 90px;
+    width: 130px;
+    line-height: 30px;
+    font-size: 120%;
+    color: rgba(255, 255, 255, 0.5);
+}
+nav .menu .active p{
+	color: rgba(255, 255, 255, 1) !important;
+}
+
+.footer{
+	position: absolute;
+	bottom: 15px;
+	left: 30px;
+	width: 160px;
+	color: rgba(255, 255, 255, 0.5);
+}
+.footer .center{
+	margin: 10px 0;
+	padding: 10px 0;
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}

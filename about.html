@@ -1,0 +1,142 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="format-detection" content="telephone=no">
+	<title></title>
+	<!-- 全局引用 -->
+	<script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+	<link href="css/basic.css" rel="stylesheet">
+	<link href="css/comon.css" rel="stylesheet">
+	<link href="css/nav.css" rel="stylesheet">
+	<link href="css/iconfont.css" rel="stylesheet">
+	<!-- 局部引用 -->
+	<link href="css/about.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/animate.css/3.5.0/animate.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+<nav>
+	<img src="images/nav/logo.png" class="logo" alt="logo">
+	<ul class="menu">
+		<li>
+			<a href="index.html">
+				<span class="i_menu i_home"></span><p class="hidden">首页</p>
+			</a>
+		</li>
+		<li>
+			<a href="about.html">
+				<span class="i_menu i_us"></span><p class="hidden">关于我们</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span class="i_menu i_service"></span><p class="hidden">服务</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span class="i_menu i_project"></span><p class="hidden">盛作</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span class="i_menu i_words"></span><p class="hidden">盛言</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span class="i_menu i_connect"></span><p class="hidden">联系我们</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span class="i_menu i_join"></span><p class="hidden">加入我们</p>
+			</a>
+		</li>
+	</ul>
+	<div class="footer hidden">
+		<p>微信号：SHENGTANG<br>合作热线：027-82701915</p>
+		<p class="center">湖北省武汉市汉阳区<br>龟山北路汉阳造33-1栋</p>
+		<p>Copyright   SHENGTANG<br>FENGXING ADVERTISING</p>
+	</div>
+</nav>
+<div class="wrap">
+	<div class="about01 content">
+		<img src="images/about/about01_title.png" class="about01_title">
+		<p>
+			盛唐风行，一支满怀激情与热血的团队。<br>
+			我们以活跃的思维和充沛的精力在行业预展宏图；我们以专业的态度与前卫的视角服务客户。<br>
+			我们融汇10余年房地产整合推广经验，核心团队累计服务近50个知名房地产开发商，操盘项目愈200,<br>
+			推广策略与视觉表达等专业能力获得合作方一致好评。我们善于捕捉市场微妙的变化，<br>
+			纳入新媒体运营、品牌包装等业务板块，致力为地产行业及品牌营销提供有效的整合推广方案。未来，我们在路上！
+		</p>
+		<img src="images/about/about01_sub.png" class="about01_sub">
+	</div>
+	<img src="images/about/about02.png" class="content">
+	<div class="about03 content">
+		<img src="images/about/about03_title.png" class="about03_title">
+		<p>
+			即刻跟新，共享盛唐风行多年房地产经验及渠道资源，专注于为企业品牌塑造优良的互联网形象。<br>
+			我们将目标、分析、计划、执行、优化这五个阶段相互关联，形成一套独特的推广体系，360°实现项目品牌的网络营销。<br>
+			在团队建设上，设有高级品牌推广策划师、网站建设资深技术人员、专业摄影师等，都将为企业网络推广和宣传带来技术保障，提供优质服务。
+		</p>
+	</div>
+	<img src="images/about/about04.png" class="content">
+	<img src="images/about/about05.png" class="content">
+	<div class="about06 content">
+		<img src="images/about/about06_title.png" class="about06_title">
+		<p>
+			<b>活力实力兼具的团队</b><br>
+			以从业5年以上的资深团队为主力，定期加入新鲜血液，为公司注入创造力。<br>
+			<b>高效执行力和洞察力</b><br>
+			及时推进策略、文案、设计等团队协作，适时做出符合市场需求及艺术审美的调整。<br>
+			<b>全面覆盖和体系化服务</b><br>
+			除策略、文案、设计外，特设手绘师、动画师、工程师提供优质的整合服务。
+		</p>
+	</div>
+	<img src="images/about/about07.png" class="content">
+	<img src="images/about/aboutIcon1.png" class="aboutIcon1 aboutIcon">
+	<img src="images/about/aboutIcon2.png" class="aboutIcon2 aboutIcon">
+	<img src="images/about/aboutIcon3.png" class="aboutIcon3 aboutIcon">
+	<img src="images/about/aboutIcon4.png" class="aboutIcon4 aboutIcon">
+	<img src="images/about/aboutIcon5.png" class="aboutIcon5 aboutIcon">
+</div>
+
+
+</body>
+<script>
+// 指定页面索引
+var navIndex = 1;
+$('.wrap').bind('scroll', function() {
+	var icon1 = true, icon2 = true, icon3 = true, icon4 = true, icon5 = true;
+	var scrollT =  $(".wrap").scrollTop();
+	var h = $(".wrap").height();
+	var pecent = parseInt(($(".wrap").scrollTop() / $(".wrap").height())*100);
+	// console.log(pecent); 
+	if(pecent > 77 && icon1){
+		$(".aboutIcon1").addClass("animated myZoomIn");
+		icon1 = false;
+	}
+	if(pecent > 120 && icon2){
+		$(".aboutIcon2").addClass("animated fadeInRight");
+		icon2 = false;
+	}
+	if(pecent > 190 && icon3){
+		$(".aboutIcon3").addClass("myRotate infinite");
+		icon3 = false;
+	}
+	if(pecent > 244 && icon4){
+		$(".aboutIcon4").addClass("animated myZoomIn");
+		icon4 = false;
+	}
+	if(pecent > 271 && icon5){
+		$(".aboutIcon5").addClass("animated myZoomIn");
+		icon5 = false;
+	}
+});
+</script>
+<script src="js/nav.js"></script>
+</html>

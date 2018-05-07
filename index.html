@@ -1,0 +1,118 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="format-detection" content="telephone=no">
+	<title></title>
+	<!-- 全局引用 -->
+	<script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+	<link href="css/basic.css" rel="stylesheet">
+	<link href="css/comon.css" rel="stylesheet">
+	<link href="css/nav.css" rel="stylesheet">
+	<link href="css/iconfont.css" rel="stylesheet">
+	<!-- 局部引用 -->
+	<link href="css/index.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/animate.css/3.5.0/animate.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+<nav>
+	<img src="images/nav/logo.png" class="logo" alt="logo">
+	<ul class="menu">
+		<li>
+			<a href="index.html">
+				<span class="i_menu i_home"></span><p class="hidden">首页</p>
+			</a>
+		</li>
+		<li>
+			<a href="about.html">
+				<span class="i_menu i_us"></span><p class="hidden">关于我们</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span class="i_menu i_service"></span><p class="hidden">服务</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span class="i_menu i_project"></span><p class="hidden">盛作</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span class="i_menu i_words"></span><p class="hidden">盛言</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span class="i_menu i_connect"></span><p class="hidden">联系我们</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span class="i_menu i_join"></span><p class="hidden">加入我们</p>
+			</a>
+		</li>
+	</ul>
+	<div class="footer hidden">
+		<p>微信号：SHENGTANG<br>合作热线：027-82701915</p>
+		<p class="center">湖北省武汉市汉阳区<br>龟山北路汉阳造33-1栋</p>
+		<p>Copyright   SHENGTANG<br>FENGXING ADVERTISING</p>
+	</div>
+</nav>
+<div class="wrap">
+	<img src="images/index/bg_index.png" class="bg_index animated0p5 fadeIn delay1p5">
+	<img src="images/index/brand.png" class="brand animated0p5 myZoomIn">
+	<a class="iconMenu icon_words animated0p5 myZoomIn delay1" href="#">
+		<img src="images/index/icon_words0.png">
+		<img src="images/index/icon_words1.png" class="hidden colourful">
+	</a>
+	<a class="iconMenu icon_us animated0p5 myZoomIn delay0p5" href="#">
+		<img src="images/index/icon_us0.png">
+		<img src="images/index/icon_us1.png" class="hidden colourful">
+	</a>
+	<a class="iconMenu icon_join animated0p5 myZoomIn delay1" href="#">
+		<img src="images/index/icon_join0.png">
+		<img src="images/index/icon_join1.png" class="hidden colourful">
+	</a>
+	<a class="iconMenu icon_about animated0p5 myZoomIn delay1" href="about.html">
+		<img src="images/index/icon_about0.png">
+		<img src="images/index/icon_about1.png" class="hidden colourful">
+	</a>
+	<a class="iconMenu icon_project animated0p5 myZoomIn delay0p5" href="#">
+		<img src="images/index/icon_project0.png">
+		<img src="images/index/icon_project1.png" class="hidden colourful">
+	</a>
+	<a class="iconMenu icon_service animated0p5 myZoomIn delay1" href="#">
+		<img src="images/index/icon_service0.png">
+		<img src="images/index/icon_service1.png" class="hidden colourful">
+	</a>
+	<span class="iconMenu icon_ufo animated0p5 myZoomIn delay1">
+		<img src="images/index/icon_ufo0.png">
+		<img src="images/index/icon_ufo1.png" class="hidden colourful">
+	</span>
+	<span class="iconMenu icon_dice animated0p5 myZoomIn delay0p5">
+		<img src="images/index/icon_dice0.png">
+		<img src="images/index/icon_dice1.png" class="hidden colourful">
+	</span>
+</div>
+
+
+</body>
+<script>
+// 指定页面索引
+var navIndex = 0;
+// index icon hover
+$("body").on("mouseover", ".iconMenu", function () {
+	$(this).children(".colourful").finish();
+	$(this).children(".colourful").animate( {"opacity":1}, 10, "linear");
+});
+$("body").on("mouseleave", ".iconMenu", function () {
+	$(this).children(".colourful").animate( {"opacity":0}, 1000, "linear");
+});
+</script>
+<script src="js/nav.js"></script>
+</html>
