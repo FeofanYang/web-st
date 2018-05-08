@@ -6,8 +6,8 @@
 .aboutIcon1{width: 12.5%;left: 3.4%; top: 127%;opacity: 0;}
 .aboutIcon2{width: 14.5%;right: 6.7%;top: 170%;opacity: 0;}
 .aboutIcon3{width: 12.5%;left: 4.7%; top: 241%;}
-.aboutIcon4{width: 12.5%;right: 6.7%;top: 294%;opacity: 0;}
-.aboutIcon5{width: 13.1%;left: 6.2%; top: 321%;opacity: 0;}
+.aboutIcon4{width: 12.5%;right: 6.7%;top: 340%;opacity: 0;}
+.aboutIcon5{width: 13.1%;left: 6.2%; top: 400%;opacity: 0;}
 
 
 
@@ -49,6 +49,10 @@
 	width: 53.6%;
 }
 
+.about02p_title{
+    margin: 50px auto 0;
+	width: 6.7%;
+}
 
 .about03{margin: 80px auto;}
 .about03_title{
