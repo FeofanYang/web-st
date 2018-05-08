@@ -1,9 +1,4 @@
 .wrap{ padding-top: 100px; }
-.main{
-	background-image: url(../images/header_bg.png);
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-}
 .connect_title{ margin-top: 50px; }
 .block>p {
     margin: 0 auto 50px;

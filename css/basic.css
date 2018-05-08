@@ -69,7 +69,7 @@ body{ overflow: hidden; }
     width: 100%;
     max-width: 1920px;
 }
-.block.main{
+.block.header{
 	padding: 25px 0;
 	background-image: url(../images/header_bg.png);
 	background-size: 100% auto;

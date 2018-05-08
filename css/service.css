@@ -1,8 +1,6 @@
 .wrap{ padding: 190px 0 0 0; }
 .block{ margin-bottom: 100px; }
 .main {
-	width: 100%;
-	max-width: 1920px;
 	background-image: url(../images/service/main_bg.png);
 	background-size: 100% auto;
 	background-repeat: no-repeat;
