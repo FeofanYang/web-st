@@ -5,6 +5,7 @@
  * 
  */
 
+
 /* #reset */
 html {
     -webkit-tap-highlight-color: transparent;
@@ -50,6 +51,54 @@ input,select,textarea,button {
     height: 0;
     visibility: hidden;
     clear: both;
+}
+
+
+/* common */
+body{ overflow: hidden; }
+
+.wrap{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+.block, .fullImg{
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+}
+.block.main{
+	padding: 25px 0;
+	background-image: url(../images/header_bg.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+.mainTitle{
+    position: relative;
+    margin: 0 auto 50px;
+    width: fit-content;
+    height: 156px;
+}
+.mainImg{
+	float: left;
+	margin: 0 20px;
+	width: 156px;
+	height: 100%;
+}
+.mainImg p{
+	position: absolute;
+    bottom: 15%;
+	font-size: 120%;
+	color: #fff;
+    left: 50%;
+	-webkit-transform:translateX(-50%);
+}
+.mainTitle>p{
+	float: left;
+    font-size: 50px;
+    line-height: 156px;
 }
 
 

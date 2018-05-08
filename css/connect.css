@@ -1,19 +1,18 @@
-.wrap{
-    overflow-x: hidden;
-    overflow-y: scroll;
+.wrap{ padding-top: 100px; }
+.main{
+	background-image: url(../images/header_bg.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
 }
-.connect_title{
-	margin-top: 50px;
-}
-.wrap p{
+.connect_title{ margin-top: 50px; }
+.block>p {
     margin: 0 auto 50px;
     line-height: 1.5em;
     text-align: center;
     font-size: 16px;
     color: #878787;
 }
-.map{
+.map {
 	margin: 0 auto;
-	/* width: 46.8%; */
 	width: 35%;
 }

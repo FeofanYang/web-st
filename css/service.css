@@ -1,0 +1,25 @@
+.wrap{ padding: 190px 0 0 0; }
+.block{ margin-bottom: 100px; }
+.main {
+	width: 100%;
+	max-width: 1920px;
+	background-image: url(../images/service/main_bg.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+	.header{ margin: 0 auto 40px; }
+	.main_title{ width: 17.5%; }
+	.main_content {
+		margin-left: 24.5%;
+		width: 51.6%;
+	}
+	.sys_title, .process_title{ width: 9.4%; }
+	.sys_content {
+		margin-left: 21%;
+		width: 63.6%;
+	}
+	.process_content{
+		margin-left: 23%;
+		width: 56.9%;
+	}

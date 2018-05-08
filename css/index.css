@@ -1,8 +1,5 @@
-.wrap{
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-}
-.brand{
+.wrap{overflow: hidden;}
+.brand {
 	position: absolute;
 	width: 48.1%;
 	left: 29.6%;
@@ -11,13 +8,9 @@
 	transform-origin: 50% 50%;
 	user-select: none;
 }
-.bg_index{
-	width: 100%;
-	max-width: 1920px;
-}
 
-.iconMenu{position: absolute;}
-.iconMenu img{
+.iconMenu{ position: absolute; }
+.iconMenu img {
 	position: absolute;
 	width: 100%;
 	top: 0;
