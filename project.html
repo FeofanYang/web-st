@@ -1,0 +1,169 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="format-detection" content="telephone=no">
+	<title></title>
+	<!-- 全局引用 -->
+	<script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+	<link href="css/basic.css" rel="stylesheet">
+	<link href="css/nav.css" rel="stylesheet">
+	<link href="css/iconfont.css" rel="stylesheet">
+	<!-- 局部引用 -->
+	<link href="css/project.css" rel="stylesheet">
+</head>
+<body>
+
+
+
+<div class="wrap">
+	<div class="block header">
+		<div class="mainTitle">
+			<p>服</p>
+			<div class="mainImg">
+				<img src="images/mainTitle.png">
+				<p>Service</p>
+			</div>
+			<p>务</p>
+		</div>
+	</div>
+	<ul class="block projectWrap">
+		<li class="box boxB">
+			<img src="images/mainTitle.png" class="boxImg">
+			<div class="mask">
+				<p class="words">新城汇隽</p>
+			</div>
+		</li>
+		<li class="box boxY">
+			<img src="images/mainTitle.png" class="boxImg">
+			<div class="mask">
+				<p class="words">新城汇隽</p>
+			</div>
+		</li>
+		<li class="box boxG">
+			<img src="images/mainTitle.png" class="boxImg">
+			<div class="mask">
+				<p class="words">新城汇隽</p>
+			</div>
+		</li>
+		<li class="box boxP">
+			<img src="images/mainTitle.png" class="boxImg">
+			<div class="mask">
+				<p class="words">新城汇隽</p>
+			</div>
+		</li>
+		<li class="box boxY">
+			<img src="images/mainTitle.png" class="boxImg">
+			<div class="mask">
+				<p class="words">新城汇隽</p>
+			</div>
+		</li>
+		<li class="box boxB">
+			<div class="mask">
+				<p class="words">新城汇隽</p>
+			</div>
+		</li>
+		<li class="box boxR">
+			<div class="mask">
+				<p class="words">新城汇隽</p>
+			</div>
+		</li>
+		<li class="box boxG">
+			<div class="mask">
+				<p class="words">新城汇隽</p>
+			</div>
+		</li>
+		<li class="box boxB">
+			<div class="mask">
+				<p class="words">新城汇隽</p>
+			</div>
+		</li>
+		<li class="box boxY">
+			<div class="mask">
+				<p class="words">新城汇隽</p>
+			</div>
+		</li>
+	</ul>
+	<div class="block header">
+		<p class="title">新媒体互动</p>
+		<p>微服务 微动图 微官网 H5展示</p>
+	</div>
+	<ul class="block projectWrap">
+		<li class="box boxB">
+			<img src="images/mainTitle.png" class="boxImg">
+			<div class="mask">
+				<p class="words">新城汇隽</p>
+			</div>
+		</li>
+		<li class="box boxY">
+			<img src="images/mainTitle.png" class="boxImg">
+			<div class="mask">
+				<p class="words">新城汇隽</p>
+			</div>
+		</li>
+		<li class="box boxG">
+			<img src="images/mainTitle.png" class="boxImg">
+			<div class="mask">
+				<p class="words">新城汇隽</p>
+			</div>
+		</li>
+		<li class="box boxP">
+			<img src="images/mainTitle.png" class="boxImg">
+			<div class="mask">
+				<p class="words">新城汇隽</p>
+			</div>
+		</li>
+		<li class="box boxY">
+			<img src="images/mainTitle.png" class="boxImg">
+			<div class="mask">
+				<p class="words">新城汇隽</p>
+			</div>
+		</li>
+		<li class="box boxB">
+			<div class="mask">
+				<p class="words">新城汇隽</p>
+			</div>
+		</li>
+		<li class="box boxR">
+			<div class="mask">
+				<p class="words">新城汇隽</p>
+			</div>
+		</li>
+		<li class="box boxG">
+			<div class="mask">
+				<p class="words">新城汇隽</p>
+			</div>
+		</li>
+		<li class="box boxB">
+			<div class="mask">
+				<p class="words">新城汇隽</p>
+			</div>
+		</li>
+		<li class="box boxY">
+			<div class="mask">
+				<p class="words">新城汇隽</p>
+			</div>
+		</li>
+	</ul>
+</div>
+
+
+</body>
+<script>
+// 指定页面索引
+var navIndex = 3;
+$('.projectWrap .box').bind('mouseover',function () {
+	$('.active').removeClass('active');
+	$('.projectWrap .box .mask,.projectWrap .box .boxImg').finish();
+	$(this).addClass('active');
+	$('.active').children('.boxImg').animate({'width':'+=50'}, 500);
+	$('.active').children('.mask').animate({'opacity':1}, 500);
+});
+$('.projectWrap .box').bind('mouseout',function () {
+	$(this).children('.mask').animate({'opacity':0}, 400);
+	$('.active').children('.boxImg').animate({'width':'-=50'}, 500);
+});
+</script>
+<script src="js/nav.js"></script>
+</html>
