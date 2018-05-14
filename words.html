@@ -1,0 +1,94 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="format-detection" content="telephone=no">
+	<title></title>
+	<!-- 全局引用 -->
+	<script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+	<link href="css/basic.css" rel="stylesheet">
+	<link href="css/nav.css" rel="stylesheet">
+	<link href="css/iconfont.css" rel="stylesheet">
+	<!-- 局部引用 -->
+	<link href="css/words.css" rel="stylesheet">
+</head>
+<body>
+
+
+
+<div class="wrap">
+	<div class="block header">
+		<div class="mainTitle">
+			<p>盛</p>
+			<div class="mainImg">
+				<img src="images/mainTitle.png">
+				<p>Speech</p>
+			</div>
+			<p>言</p>
+		</div>
+	</div>
+	<div class="block" id="wordsWrap">
+		<div class="wordsNav">
+			<div class="active">鲸语</div>
+			<div>鲸人一笔</div>
+			<p class="variable"></p>
+		</div>
+		<ul class="wordsList">
+			<li>
+				<div class="left">
+					<div class="day mainFont">05/01</div>
+					<div class="year subFont">—2018—</div>
+				</div>
+				<div class="right">
+					<div class="wordsTitle mainFont">请回答，2017</div>
+					<div class="wordsHours subFont"><i class="iconfont icon-time"></i> 18:06:03</div>
+					<div class="wordsSummary">这是一段超长的文字这是一段超长的文字这是一段超长的文字这是一段超长的文字这是一段超长的文字这是一段超长的文字这是一段超长的文字这是一段超长的文字</div>
+				</div>
+			</li>
+			<li>
+				<div class="left">
+					<div class="day mainFont">05/01</div>
+					<div class="year subFont">—2018—</div>
+				</div>
+				<div class="right">
+					<div class="wordsTitle mainFont">请回答，2017</div>
+					<div class="wordsHours subFont"><i class="iconfont icon-time"></i> 18:06:03</div>
+					<div class="wordsSummary">这是一段超长的文字这是一段超长的文字这是一段超长的文字这是一段超长的文字这是一段超长的文字这是一段超长的文字这是一段超长的文字这是一段超长的文字</div>
+				</div>
+			</li>
+			<li>
+				<div class="left">
+					<div class="day mainFont">05/01</div>
+					<div class="year subFont">—2018—</div>
+				</div>
+				<div class="right">
+					<div class="wordsTitle mainFont">请回答，2017</div>
+					<div class="wordsHours subFont"><i class="iconfont icon-time"></i> 18:06:03</div>
+					<div class="wordsSummary">这是一段超长的文字这是一段超长的文字这是一段超长的文字这是一段超长的文字这是一段超长的文字这是一段超长的文字这是一段超长的文字这是一段超长的文字</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+</body>
+<script>
+// 指定页面索引
+var navIndex = 4;
+$('.wordsNav>div').click(function () {
+	$('.wordsNav>div').removeClass('active');
+	$(this).addClass('active');
+});
+
+$('body').on('mouseover','.wordsTitle',function () {
+	$('.wordsTitle').removeClass('active');
+	$(this).addClass('active');
+});
+$('body').on('mouseout','.wordsTitle',function () {
+	$('.wordsTitle').removeClass('active');
+});
+</script>
+<script src="js/nav.js"></script>
+</html>

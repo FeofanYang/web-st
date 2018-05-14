@@ -1,0 +1,72 @@
+#wordsWrap{
+	position: absolute;
+	left: 20%;
+	margin: 50px 0;
+	width: 60%;
+}
+
+.wordsNav{
+	height: 50px;
+}
+.wordsNav>div{
+	padding-top: 3px;
+	float: left;
+	width: 10%;
+	height: 100%;
+	line-height: 50px;
+	text-align: center;
+	border-bottom: 1px solid #ebebeb;
+	cursor: pointer;
+}
+.wordsNav .variable{
+	float: left;
+	width: 80%;
+	height: 100%;
+	border-bottom: 1px solid #ebebeb;
+	cursor: auto;
+}
+.wordsNav .active{
+	padding-top: 0px;
+	border-bottom: none;
+	border-left: 1px solid #ebebeb;
+	border-right: 1px solid #ebebeb;
+	border-top: 3px solid #79c597;
+}
+
+
+.wordsList li{
+	padding: 40px 0;
+	border-bottom: 1px solid #ebebeb;
+	overflow: hidden;
+}
+.left{
+	float: left;
+	width: 10%;
+    padding-right: 20px;
+	text-align: center;
+    border-right: 1px solid #ebebeb;
+}
+.right{
+	float: left;
+	width: 90%;
+    padding-left: 20px;
+}
+.mainFont{
+	font-size: 150%;
+	font-weight: 400;
+	margin-bottom: 5px;
+}
+.subFont{
+	font-size: 90%;
+	color: #c5c5c5;
+}
+.wordsSummary{
+	margin-top: 30px;
+	font-size: 90%;
+	color: #7d7d7d;
+}
+.wordsList .active{
+	color: #79c597;
+	cursor: pointer;
+	transition: all 0.3s;
+}
