@@ -183,18 +183,9 @@ $('.projectWrap .box').bind('mouseout',function () {
 	$(this).children('.mask').animate({'opacity':0}, 400);
 	$('.active').children('.boxImg').animate({'width':'-=50'}, 500);
 });
-$('.projectDetail').hide();
 
-$('.projectDetail').bind('scroll', function() {
-	var scrollT =  $(".projectDetail").scrollTop();
-	var h = $(".projectDetail").height();
-	var pecent = parseInt(($(".projectDetail").scrollTop() / $(".projectDetail").height())*100);
-	if(pecent > 50){
-		$("#toTop").show();
-	}else{
-		$("#toTop").hide();
-	}
-});
+$('.projectDetail').hide();
+// 选择项目
 $('.projectWrap .box').click(function () {
 	let point = $(this).attr("point");
 	let pointLength;
@@ -237,6 +228,7 @@ $('.projectWrap .box').click(function () {
 	else if(point=="ZA") {
 		pointLength = 6;
 	}	
+	$('.projectDetail img').remove();
 	for (let i = 1; i <= pointLength; i++) {
 		let curN = i;
 		if(i<=9){
@@ -247,12 +239,24 @@ $('.projectWrap .box').click(function () {
 	$('.projectList').hide();
 	$('.projectDetail').show();
 });
+// 两个按钮
 $('#backToProject').click(function () {
 	$('.projectDetail').hide();
 	$('.projectList').show();
 });
 $('#toTop').click(function () {
 	$('.projectDetail').animate( {scrollTop: 0}, 500);
+});
+// 检测按钮
+$('.projectDetail').bind('scroll', function() {
+	var scrollT =  $(".projectDetail").scrollTop();
+	var h = $(".projectDetail").height();
+	var pecent = parseInt(($(".projectDetail").scrollTop() / $(".projectDetail").height())*100);
+	if(pecent > 50){
+		$("#toTop").show();
+	}else{
+		$("#toTop").hide();
+	}
 });
 </script>
 <script src="js/nav.js"></script>
