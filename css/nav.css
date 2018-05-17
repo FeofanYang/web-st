@@ -44,7 +44,7 @@ nav .menu li p {
 }
 nav .menu .active p{ color: rgba(255, 255, 255, 1) !important; }
 
-.footer {
+footer {
 	position: absolute;
 	bottom: 15px;
 	left: 25px;
@@ -53,9 +53,10 @@ nav .menu .active p{ color: rgba(255, 255, 255, 1) !important; }
 	color: rgba(255, 255, 255, 0.5);
 	word-break: break-all;
 }
-.footer .center {
+footer address {
 	margin: 10px 0;
 	padding: 10px 0;
 	border-top: 1px solid rgba(255, 255, 255, 0.2);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	font-style: inherit;
 }
