@@ -17,7 +17,7 @@
 
 
 
-<div class="wrap">
+<div class="wrap projectList">
 	<div class="block header">
 		<div class="mainTitle">
 			<p>服</p>
@@ -29,59 +29,74 @@
 		</div>
 	</div>
 	<ul class="block projectWrap">
-		<li class="box boxB">
+		<li class="box boxB" point="DJ">
 			<img src="images/mainTitle.png" class="boxImg">
 			<div class="mask">
-				<p class="words">新城汇隽</p>
+				<p class="words">电建</p>
 			</div>
 		</li>
-		<li class="box boxY">
+		<li class="box boxY" point="JT">
 			<img src="images/mainTitle.png" class="boxImg">
 			<div class="mask">
-				<p class="words">新城汇隽</p>
+				<p class="words">璟棠</p>
 			</div>
 		</li>
-		<li class="box boxG">
+		<li class="box boxG" point="JL">
 			<img src="images/mainTitle.png" class="boxImg">
 			<div class="mask">
-				<p class="words">新城汇隽</p>
+				<p class="words">君临国际</p>
 			</div>
 		</li>
-		<li class="box boxP">
+		<li class="box boxP" point="LC">
 			<img src="images/mainTitle.png" class="boxImg">
 			<div class="mask">
-				<p class="words">新城汇隽</p>
+				<p class="words">龙城天第</p>
 			</div>
 		</li>
-		<li class="box boxY">
+		<li class="box boxY" point="RC">
 			<img src="images/mainTitle.png" class="boxImg">
 			<div class="mask">
-				<p class="words">新城汇隽</p>
+				<p class="words">融创</p>
 			</div>
 		</li>
-		<li class="box boxB">
+		<li class="box boxB" point="TR">
 			<div class="mask">
-				<p class="words">新城汇隽</p>
+				<p class="words">庭瑞</p>
 			</div>
 		</li>
-		<li class="box boxR">
+		<li class="box boxR" point="GX">
 			<div class="mask">
-				<p class="words">新城汇隽</p>
+				<p class="words">万汇城</p>
 			</div>
 		</li>
-		<li class="box boxG">
+		<li class="box boxG" point="WY">
 			<div class="mask">
-				<p class="words">新城汇隽</p>
+				<p class="words">万盈国际</p>
 			</div>
 		</li>
-		<li class="box boxB">
+		<li class="box boxB" point="XY">
 			<div class="mask">
-				<p class="words">新城汇隽</p>
+				<p class="words">玺樾</p>
 			</div>
 		</li>
-		<li class="box boxY">
+		<li class="box boxY" point="XSW">
 			<div class="mask">
-				<p class="words">新城汇隽</p>
+				<p class="words">香水湾</p>
+			</div>
+		</li>
+		<li class="box boxG" point="XC">
+			<div class="mask">
+				<p class="words">新城</p>
+			</div>
+		</li>
+		<li class="box boxP" point="YST">
+			<div class="mask">
+				<p class="words">院士廷</p>
+			</div>
+		</li>
+		<li class="box boxY" point="ZA">
+			<div class="mask">
+				<p class="words">左岸天地</p>
 			</div>
 		</li>
 	</ul>
@@ -147,6 +162,10 @@
 		</li>
 	</ul>
 </div>
+<div class="wrap projectDetail">
+	<button id="backToProject">返回<br>鲸作</button>
+	<button id="toTop">↑</button>
+</div>
 
 
 </body>
@@ -163,6 +182,77 @@ $('.projectWrap .box').bind('mouseover',function () {
 $('.projectWrap .box').bind('mouseout',function () {
 	$(this).children('.mask').animate({'opacity':0}, 400);
 	$('.active').children('.boxImg').animate({'width':'-=50'}, 500);
+});
+$('.projectDetail').hide();
+
+$('.projectDetail').bind('scroll', function() {
+	var scrollT =  $(".projectDetail").scrollTop();
+	var h = $(".projectDetail").height();
+	var pecent = parseInt(($(".projectDetail").scrollTop() / $(".projectDetail").height())*100);
+	if(pecent > 50){
+		$("#toTop").show();
+	}else{
+		$("#toTop").hide();
+	}
+});
+$('.projectWrap .box').click(function () {
+	let point = $(this).attr("point");
+	let pointLength;
+	if(point=="DJ") {
+		pointLength = 42;
+	}
+	else if(point=="JT") {
+		pointLength = 36;
+	}
+	else if(point=="JL") {
+		pointLength = 7;
+	}
+	else if(point=="LC") {
+		pointLength = 27;
+	}
+	else if(point=="RC") {
+		pointLength = 36;
+	}
+	else if(point=="TR") {
+		pointLength = 48;
+	}
+	else if(point=="GX") {
+		pointLength = 4;
+	}
+	else if(point=="WY") {
+		pointLength = 5;
+	}
+	else if(point=="XY") {
+		pointLength = 14;
+	}
+	else if(point=="XSW") {
+		pointLength = 6;
+	}
+	else if(point=="XC") {
+		pointLength = 47;
+	}
+	else if(point=="YST") {
+		pointLength = 38;
+	}
+	else if(point=="ZA") {
+		pointLength = 6;
+	}	
+	for (let i = 1; i <= pointLength; i++) {
+		let curN = i;
+		if(i<=9){
+			curN = '0' + i;
+		}
+		$('.projectDetail').append("<img src='images/project/"+point+curN+".jpg'>")
+	}
+	$('.projectList').hide();
+	$('.projectDetail').show();
+});
+$('#backToProject').click(function () {
+	$('.projectDetail').hide();
+	$('.projectList').show();
+});
+$('#toTop').click(function () {
+	$('.projectDetail').animate( {scrollTop: 0}, 500);
 });
 </script>
 <script src="js/nav.js"></script>

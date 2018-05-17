@@ -52,3 +52,38 @@
     background-color: #e9515d;
     color: #fff;
 }
+
+.projectDetail img{
+	margin: 0 auto 10px;
+	width: 100%;
+	max-width: 1200px;
+}
+
+
+#backToProject,#toTop{
+    position: fixed;
+    right: 50px;
+    width: 46px;
+    height: 46px;
+    background-color: #ccc;
+    color: #fff;
+    z-index: 99;
+    opacity: 0.8;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#backToProject{
+    bottom: 81px;
+    padding: 3px 0;
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-indent: 2px;
+}
+#toTop{
+	display: none;
+    bottom: 30px;
+    cursor: pointer;
+}
