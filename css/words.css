@@ -39,6 +39,9 @@
 	border-bottom: 1px solid #ebebeb;
 	overflow: hidden;
 }
+.wordsList li a{
+	color: unset;
+}
 .left{
 	float: left;
 	width: 10%;
