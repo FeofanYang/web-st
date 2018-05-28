@@ -1,0 +1,87 @@
+.aboutIcon{ position: absolute; }
+.aboutIcon1{width: 12.5%;left: 3.4%; top: 127%;opacity: 0;}
+.aboutIcon2{width: 14.5%;right: 6.7%;top: 170%;opacity: 0;}
+.aboutIcon3{width: 12.5%;left: 4.7%; top: 241%;}
+.aboutIcon4{width: 12.5%;right: 6.7%;top: 340%;opacity: 0;}
+.aboutIcon5{width: 13.1%;left: 6.2%; top: 400%;opacity: 0;}
+
+
+
+
+
+.block {
+	margin: 0 auto 50px;
+	user-select: none;
+	-webkit-user-select: none;
+}
+.block>p {
+    margin: 0 auto;
+	width: 50%;
+    text-align: center;
+	font-size: 250%;
+    color: rgb(90, 88, 88);
+}
+.block>p>span {
+	display: block;
+	margin-top: 30px;
+	font-size: 16px;
+}
+.block b{ color: #333; }
+
+.header{ margin: 0 auto 30px; }
+.about01 {
+	padding: 190px 0;
+    background-size: 100% auto;
+    background-position: center center;
+    background-image: url(../images/about/about01.png);
+    background-repeat: no-repeat;
+}
+
+
+.joinIcon{ margin: 0 auto 20px; }
+.joinList span {
+	display: inherit;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.joinList li {
+	text-align: center;
+	font-size: 24px;
+	color: #717171;
+}
+.joinList li i {
+	margin-right: 5px;
+	line-height: 2.5em;
+	font-style: inherit;
+	color: #e9525d;
+}
+
+
+.classList {
+	margin-left: 10%;
+	width: 80%;
+}
+.classList tr{ height: 50px; }
+.classList td {
+	width: 33%;
+	border-bottom: 1px dashed #908888;
+	text-align: center;
+}
+.classList .class {
+    text-align: left;
+    padding-left: 10%;
+}
+
+
+.require article{ margin-top: 40px; }
+.require h5 {
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 120%;
+	color: #e9525d;
+}
+.require p {
+	text-align: center;
+	margin-bottom: 60px;
+	line-height: 2em;
+}
