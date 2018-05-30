@@ -58,7 +58,7 @@
 			</a>
 		</li>
 	</ul>
-	<footer class="hidden">
+	<footer>
 		<p>微信号：SHENGTANG<br>合作热线：027-82701915</p>
 		<address>湖北省武汉市汉阳区<br>龟山北路汉阳造33-1栋</address>
 		<p>Copyright   SHENGTANG<br>FENGXING ADVERTISING</p>
@@ -69,35 +69,35 @@
 	<img src="images/index/brand.png" class="brand animated0p5 myZoomIn">
 	<a class="iconMenu icon_words animated0p5 myZoomIn delay1" href="words.html">
 		<img src="images/index/icon_words0.png">
-		<img src="images/index/icon_words1.png" class="hidden colourful">
+		<img src="images/index/icon_words1.png" class="colourful">
 	</a>
 	<a class="iconMenu icon_us animated0p5 myZoomIn delay0p5" href="connect.html">
 		<img src="images/index/icon_us0.png">
-		<img src="images/index/icon_us1.png" class="hidden colourful">
+		<img src="images/index/icon_us1.png" class="colourful">
 	</a>
 	<a class="iconMenu icon_join animated0p5 myZoomIn delay1" href="join.html">
 		<img src="images/index/icon_join0.png">
-		<img src="images/index/icon_join1.png" class="hidden colourful">
+		<img src="images/index/icon_join1.png" class="colourful">
 	</a>
 	<a class="iconMenu icon_about animated0p5 myZoomIn delay1" href="about.html">
 		<img src="images/index/icon_about0.png">
-		<img src="images/index/icon_about1.png" class="hidden colourful">
+		<img src="images/index/icon_about1.png" class="colourful">
 	</a>
 	<a class="iconMenu icon_project animated0p5 myZoomIn delay0p5" href="project.html">
 		<img src="images/index/icon_project0.png">
-		<img src="images/index/icon_project1.png" class="hidden colourful">
+		<img src="images/index/icon_project1.png" class="colourful">
 	</a>
 	<a class="iconMenu icon_service animated0p5 myZoomIn delay1" href="service.html">
 		<img src="images/index/icon_service0.png">
-		<img src="images/index/icon_service1.png" class="hidden colourful">
+		<img src="images/index/icon_service1.png" class="colourful">
 	</a>
 	<span class="iconMenu icon_ufo animated0p5 myZoomIn delay1">
 		<img src="images/index/icon_ufo0.png">
-		<img src="images/index/icon_ufo1.png" class="hidden colourful">
+		<img src="images/index/icon_ufo1.png" class="colourful">
 	</span>
 	<span class="iconMenu icon_dice animated0p5 myZoomIn delay0p5">
 		<img src="images/index/icon_dice0.png">
-		<img src="images/index/icon_dice1.png" class="hidden colourful">
+		<img src="images/index/icon_dice1.png" class="colourful">
 	</span>
 </div>
 
@@ -106,7 +106,8 @@
 <script>
 // 指定页面索引
 var navIndex = 0;
-// index icon hover
+var isMB = false;
+
 $("body").on("mouseover", ".iconMenu", function () {
 	$(this).children(".colourful").finish();
 	$(this).children(".colourful").animate( {"opacity":1}, 10, "linear");
@@ -114,6 +115,25 @@ $("body").on("mouseover", ".iconMenu", function () {
 $("body").on("mouseleave", ".iconMenu", function () {
 	$(this).children(".colourful").animate( {"opacity":0}, 1000, "linear");
 });
+
+isMB = true;
+$("nav").prepend("<i class='iconfont icon-caidan'></i>");
+function browserRedirect() {
+    var sUserAgent = navigator.userAgent.toLowerCase();
+    var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+    var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+    var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+    var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+    var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+    var bIsAndroid = sUserAgent.match(/android/i) == "android";
+    var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+    var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+    // 微信页面
+    var bIsWeChat = sUserAgent.match(/MicroMessenger/i) == "micromessenger";
+    if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM || bIsWeChat) {
+    }
+}
+browserRedirect();
 </script>
 <script src="js/nav.js"></script>
 </html>

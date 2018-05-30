@@ -1,3 +1,5 @@
+.wrap{ padding: 100px 0 0 0; }
+
 .aboutIcon{ position: absolute; }
 .aboutIcon1{width: 12.5%;left: 3.4%; top: 127%;opacity: 0;}
 .aboutIcon2{width: 14.5%;right: 6.7%;top: 170%;opacity: 0;}
@@ -25,13 +27,6 @@
 .block b{ color: #333; }
 
 .header{ margin: 0 auto 30px; }
-.about01 {
-	padding-top: 190px;
-	height: 918px;
-	background-size: 100% auto;
-	background-image: url(../images/about/about01.png);
-	background-repeat: no-repeat;
-}
 .about01_title { width: 20%; }
 .about01_sub {   width: 53.6%; margin: 50px auto 0; }
 .about02p_title {width: 6.7%; }
