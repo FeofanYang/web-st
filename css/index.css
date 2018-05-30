@@ -1,4 +1,3 @@
-.wrap{overflow: hidden;}
 .brand {
 	position: absolute;
 	width: 48.1%;
@@ -18,6 +17,7 @@
 	transform-origin: 50% 50%;
 	user-select: none;
 }
+.colourful{ opacity: 0; }
 .icon_words{  width: 18.7%;left: 10%;  top: 39%;  }
 .icon_us{     width: 15.3%;left: 15.5%;top: 22.3%;}
 .icon_join{   width: 9.4%; left: 56.6%;top: 13.2%;}

@@ -106,7 +106,6 @@
 <script>
 // 指定页面索引
 var navIndex = 0;
-var isMB = false;
 
 $("body").on("mouseover", ".iconMenu", function () {
 	$(this).children(".colourful").finish();
@@ -115,25 +114,6 @@ $("body").on("mouseover", ".iconMenu", function () {
 $("body").on("mouseleave", ".iconMenu", function () {
 	$(this).children(".colourful").animate( {"opacity":0}, 1000, "linear");
 });
-
-isMB = true;
-$("nav").prepend("<i class='iconfont icon-caidan'></i>");
-function browserRedirect() {
-    var sUserAgent = navigator.userAgent.toLowerCase();
-    var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
-    var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
-    var bIsMidp = sUserAgent.match(/midp/i) == "midp";
-    var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
-    var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
-    var bIsAndroid = sUserAgent.match(/android/i) == "android";
-    var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
-    var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
-    // 微信页面
-    var bIsWeChat = sUserAgent.match(/MicroMessenger/i) == "micromessenger";
-    if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM || bIsWeChat) {
-    }
-}
-browserRedirect();
 </script>
 <script src="js/nav.js"></script>
 </html>
