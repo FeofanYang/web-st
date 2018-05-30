@@ -1,8 +1,8 @@
-.aboutIcon{ position: absolute; }
+.aboutIcon{ position: absolute;pointer-events: none; }
 .aboutIcon1{width: 12.5%;left: 3.4%; top: 127%;opacity: 0;}
 .aboutIcon2{width: 14.5%;right: 6.7%;top: 170%;opacity: 0;}
 .aboutIcon3{width: 12.5%;left: 4.7%; top: 241%;}
-.aboutIcon4{width: 12.5%;right: 6.7%;top: 340%;opacity: 0;}
+.aboutIcon4{width: 12.5%;right: 6.7%;top: 310%;opacity: 0;}
 .aboutIcon5{width: 13.1%;left: 6.2%; top: 400%;opacity: 0;}
 
 
@@ -63,6 +63,7 @@
 }
 .classList tr{ height: 50px; }
 .classList td {
+	position: relative;
 	width: 33%;
 	border-bottom: 1px dashed #908888;
 	text-align: center;
@@ -71,17 +72,26 @@
     text-align: left;
     padding-left: 10%;
 }
-
-
-.require article{ margin-top: 40px; }
-.require h5 {
-	text-align: center;
+.toggle-btn{
+	position: absolute;
+    padding: 0 15px;
+    top: 0;
+    right: 0;
+    line-height: 50px;
+	cursor: pointer;
+}
+.toggle-row td{
+	padding: 20px 0;
+}
+.toggle-row h5 {
+	text-align: left;
+	margin-left: 10%;
 	margin-bottom: 10px;
 	font-size: 120%;
 	color: #e9525d;
 }
-.require p {
-	text-align: center;
-	margin-bottom: 60px;
+.toggle-row p {
+	text-align: left;
+	margin-left: 10%;
 	line-height: 2em;
 }
