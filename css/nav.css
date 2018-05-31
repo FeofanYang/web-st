@@ -28,7 +28,9 @@ nav {
       left: .1rem;
       width: .5rem;
       height: .5rem;
-      background-size: 100% 100%; }
+      background-size: 80% 80%;
+      background-repeat: no-repeat;
+      background-position: center center; }
   nav .menu .active p {
     color: white !important; }
 
@@ -78,7 +80,9 @@ footer {
       margin: .5rem auto;
       width: 1.5rem; }
     nav .menu li p {
-      margin-left: 1.2rem; } }
+      margin-left: 1.2rem; }
+    nav .menu li span {
+      background-size: 80% 80%; } }
 .icon-caidan {
   display: block;
   width: 100%;

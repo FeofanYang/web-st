@@ -32,7 +32,9 @@ nav {
 				left: .1rem;
 				width: .5rem;
 				height: .5rem;
-				background-size: 100% 100%;
+				background-size: 80% 80%;
+				background-repeat: no-repeat;
+				background-position: center center;
 			}
 		}
 		.active p{
@@ -80,8 +82,9 @@ footer {
 			margin: .5rem auto;
 			width: 1.5rem;
 		}
-		.menu li p{
-			margin-left: 1.2rem;
+		.menu li {
+			p{ margin-left: 1.2rem; }
+			span{ background-size: 80% 80%; }
 		}
 	}
 }
