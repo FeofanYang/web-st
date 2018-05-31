@@ -7,14 +7,6 @@
   url('iconfont.svg?t=1527751245520#iconfont') format('svg'); /* iOS 4.1- */
 }
 
-.iconfont {
-  font-family:"iconfont" !important;
-  font-size:16px;
-  font-style:normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 .icon-time:before { content: "\e65f"; }
 
 .icon-86:before { content: "\e67c"; }
