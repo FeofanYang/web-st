@@ -75,6 +75,7 @@ input,select,textarea,button {
 
 /* common */
 .wrap{
+	padding-top: .5rem;
 	position: relative;
 	width: 100%;
 	height: 100%;
@@ -129,6 +130,17 @@ input,select,textarea,button {
 	top: 5%;
 	right: 0;
 	-webkit-mask-image: -webkit-gradient(linear,center top,center bottom,color-stop(100%,transparent),color-stop(70%,transparent),color-stop(0,#000));
+}
+
+
+
+
+
+@media screen and (max-width: 640px) {
+	.block-first-l, .block-first-r {
+		top: 0;
+		width: 45%;
+	}
 }
 
 
