@@ -1,6 +1,6 @@
 .projectWrap{
-    margin-bottom: 50px;
-	padding-left: 70px;
+    margin-bottom: .5rem;
+	padding-left: .7rem;
 	overflow: hidden;
 }
 .projectWrap .box{
@@ -30,7 +30,7 @@
 	padding: 0 13%;
 	vertical-align: middle;
 	text-align: center;
-    font-size: 18px;
+    font-size: .18rem;
     letter-spacing: 1px;
     text-indent: 1px;
     line-height: 1.5em;
@@ -45,17 +45,17 @@
 }
 .header{text-align: center;}
 .title{
-    margin: 0 auto 10px;
+    margin: 0 auto .1rem;
     padding: 3px 0;
     display: block;
-    width: 140px;
+    width: 1.4rem;
     text-align: center;
     background-color: #e9515d;
     color: #fff;
 }
 
 .projectDetail img{
-	margin: 0 auto 10px;
+	margin: 0 auto .1rem;
 	width: 100%;
 	max-width: 1200px;
 }
@@ -63,9 +63,9 @@
 
 #backToProject,#toTop{
     position: fixed;
-    right: 50px;
-    width: 46px;
-    height: 46px;
+    right: .5rem;
+    width: .5rem;
+    height: .5rem;
     background-color: #ccc;
     color: #fff;
     z-index: 99;
@@ -75,16 +75,16 @@
     transition: all 0.3s ease;
 }
 #backToProject{
-    bottom: 81px;
+    bottom: .8rem;
     padding: 3px 0;
-    font-size: 16px;
+    font-size: .16rem;
     text-align: center;
-    line-height: 20px;
+    line-height: .2rem;
     letter-spacing: 2px;
     text-indent: 2px;
 }
 #toTop{
 	display: none;
-    bottom: 30px;
+    bottom: .3rem;
     cursor: pointer;
 }

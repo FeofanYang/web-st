@@ -1,7 +1,7 @@
-.wrap{ padding: 100px 0 0 0; }
-.block{ margin-bottom: 100px; }
+.wrap{ padding: 1rem 0 0 0; }
+.block{ margin-bottom: 1rem; }
 
-	.header{ margin: 0 auto 40px; }
+	.header{ margin: 0 auto .4rem; }
 	.main_title{ width: 17.5%; }
 	.main_content {
 		margin-left: 24.5%;

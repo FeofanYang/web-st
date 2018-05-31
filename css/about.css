@@ -1,4 +1,4 @@
-.wrap{ padding: 100px 0 0 0; }
+.wrap{ padding: 1rem 0 0 0; }
 
 .aboutIcon{ position: absolute; }
 .aboutIcon1{width: 12.5%;left: 3.4%; top: 127%;opacity: 0;}
@@ -12,7 +12,7 @@
 
 
 .block {
-	margin: 0 auto 50px;
+	margin: 0 auto .5rem;
 	user-select: none;
 	-webkit-user-select: none;
 }
@@ -21,14 +21,14 @@
 	width: 50%;
     line-height: 3em;
     text-align: center;
-    font-size: 16px;
+    font-size: .16rem;
     color: #878787;
 }
 .block b{ color: #333; }
 
-.header{ margin: 0 auto 30px; }
+.header{ margin: 0 auto .3rem; }
 .about01_title { width: 20%; }
-.about01_sub {   width: 53.6%; margin: 50px auto 0; }
+.about01_sub {   width: 53.6%; margin: .5rem auto 0; }
 .about02p_title {width: 6.7%; }
 .about03_title{  width: 15.2%; }
 .about06_title{  width: 6.3%; }

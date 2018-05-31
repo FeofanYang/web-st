@@ -1,4 +1,4 @@
-.wrap{ padding: 100px 0 0 0; }
+.wrap{ padding: 1rem 0 0 0; }
 
 .aboutIcon{ position: absolute;pointer-events: none; }
 .aboutIcon1{width: 12.5%;left: 3.4%; top: 127%;opacity: 0;}
@@ -12,7 +12,7 @@
 
 
 .block {
-	margin: 0 auto 50px;
+	margin: 0 auto .5rem;
 	user-select: none;
 	-webkit-user-select: none;
 }
@@ -20,28 +20,29 @@
     margin: 0 auto;
 	width: 50%;
     text-align: center;
-	font-size: 250%;
+	font-size: .4rem;
     color: rgb(90, 88, 88);
 }
 .block>p>span {
 	display: block;
-	margin-top: 30px;
-	font-size: 16px;
+	margin-top: .3rem;
+	font-size: .16rem;
 }
 .block b{ color: #333; }
 
-.header{ margin: 0 auto 30px; }
+.header{ margin: 0 auto .3rem; }
 
 
-.joinIcon{ margin: 0 auto 20px; }
+.joinIcon{ margin: 0 auto .2rem; }
 .joinList span {
 	display: inherit;
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: .2rem;
+	font-size: .16rem
 }
 .joinList li {
 	text-align: center;
-	font-size: 24px;
+	font-size: .24rem;
 	color: #717171;
 }
 .joinList li i {
@@ -56,12 +57,13 @@
 	margin-left: 10%;
 	width: 80%;
 }
-.classList tr{ height: 50px; }
+.classList tr{ height: .5rem; }
 .classList td {
 	position: relative;
 	width: 33%;
 	border-bottom: 1px dashed #908888;
 	text-align: center;
+	font-size: .16rem
 }
 .classList .class {
     text-align: left;
@@ -69,20 +71,20 @@
 }
 .toggle-btn{
 	position: absolute;
-    padding: 0 15px;
+    padding: 0 .15rem;
     top: 0;
     right: 0;
-    line-height: 50px;
+    line-height: .5rem;
 	cursor: pointer;
 }
 .toggle-row td{
-	padding: 20px 0;
+	padding: .2rem 0;
 }
 .toggle-row h5 {
 	text-align: left;
 	margin-left: 10%;
-	margin-bottom: 10px;
-	font-size: 120%;
+	margin-bottom: .1rem;
+	font-size: .16rem;
 	color: #e9525d;
 }
 .toggle-row p {
