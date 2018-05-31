@@ -39,13 +39,16 @@
   margin: 0 auto;
   width: 70%; }
 
+.idea {
+  width: 50%; }
+
 article {
   margin: 0 auto .3rem;
-  width: 50%; }
+  width: 70%; }
   article p {
     line-height: 3em;
     text-align: center;
-    font-size: .16rem;
+    font-size: .24rem;
     color: #878787; }
   article b {
     color: #333; }
@@ -78,11 +81,12 @@ article {
     top: 0;
     width: 45%; }
 
+  article, .aboutImg {
+    width: 90%; }
+
   article p {
-    padding: 0 .1rem;
-    width: 100%;
     line-height: 1.2em;
-    margin-bottom: 0.2rem; }
+    margin-bottom: .2rem; }
 
   .aboutIcon {
     display: none; } }

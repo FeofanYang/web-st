@@ -22,15 +22,14 @@
 	width: 70%;
 }
 .idea{ width: 50%; }
-.construction{ padding-left: 1rem; }
 // 文章
 article {
 	margin: 0 auto .3rem;
-	width: 50%;
+	width: 70%;
 	p {
 		line-height: 3em;
 		text-align: center;
-		font-size: .16rem;
+		font-size: .24rem;
 		color: $fontColor;
 	}
 	b{ color: $titleColor }
@@ -69,11 +68,12 @@ article {
 		top: 0;
 		width: 45%;
 	}
+	article,.aboutImg {
+		width: 90%;
+	}
 	article p {
-		padding: 0 .1rem;
-		width: 100%;
 		line-height: 1.2em;
-		margin-bottom: .2rem
+		margin-bottom: .2rem;
 	}
 	.aboutIcon{	display: none; }
 }
