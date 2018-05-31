@@ -1,87 +1,91 @@
 nav {
-	position: absolute;
-	height: 100%;
-	width: 70px;
-	background-color: #878787;
-	z-index: 100;
-	overflow: hidden;
-}
+  position: absolute;
+  height: 100%;
+  width: 70px;
+  background-color: #878787;
+  z-index: 100;
+  overflow: hidden; }
 
 nav .logo {
-	position: relative;
-	margin: 20px auto 50px;
-	width: 60px;
-}
+  position: relative;
+  margin: 20px auto 50px;
+  width: 60px; }
 nav .menu li {
-	width: 100%;
-	height: 30px;
-	margin-bottom: 15px;
-	cursor: pointer;
-}
-nav .menu li a{ position: relative; }
-nav .menu li span {
-	position: absolute;
-	left: 20px;
-	width: 30px;
-	height: 30px;
-	background-size: 100% 100%;
-}
-.i_home{   background-image: url(../images/nav/i_home.png);   }
-.i_us{     background-image: url(../images/nav/i_us.png);     }
-.i_service{background-image: url(../images/nav/i_service.png);}
-.i_project{background-image: url(../images/nav/i_project.png);}
-.i_words{  background-image: url(../images/nav/i_words.png);  }
-.i_connect{background-image: url(../images/nav/i_connect.png);}
-.i_join{   background-image: url(../images/nav/i_join.png);   }
-
-
-nav .menu li p {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 15px;
+  cursor: pointer; }
+  nav .menu li a {
+    position: relative; }
+  nav .menu li p {
     position: relative;
     margin-left: 90px;
     width: 130px;
     line-height: 30px;
     font-size: 100%;
-    color: rgba(255, 255, 255, 0.5);
-}
-nav .menu .active p{ color: rgba(255, 255, 255, 1) !important; }
+    color: rgba(255, 255, 255, 0.5); }
+  nav .menu li span {
+    position: absolute;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%; }
+nav .menu .active p {
+  color: white !important; }
+
+.i_home {
+  background-image: url(../images/nav/i_home.png); }
+
+.i_us {
+  background-image: url(../images/nav/i_us.png); }
+
+.i_service {
+  background-image: url(../images/nav/i_service.png); }
+
+.i_project {
+  background-image: url(../images/nav/i_project.png); }
+
+.i_words {
+  background-image: url(../images/nav/i_words.png); }
+
+.i_connect {
+  background-image: url(../images/nav/i_connect.png); }
+
+.i_join {
+  background-image: url(../images/nav/i_join.png); }
 
 footer {
-	position: absolute;
-	bottom: 15px;
-	left: 25px;
-	width: 170px;
-	font-size: 90%;
-	color: rgba(255, 255, 255, 0.5);
-	word-break: break-all;
-	opacity: 0;
-}
+  position: absolute;
+  bottom: 15px;
+  left: 25px;
+  width: 170px;
+  font-size: 90%;
+  color: rgba(255, 255, 255, 0.5);
+  word-break: break-all;
+  opacity: 0; }
+
 footer address {
-	margin: 10px 0;
-	padding: 10px 0;
-	border-top: 1px solid rgba(255, 255, 255, 0.2);
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-	font-style: inherit;
-}
+  margin: 10px 0;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-style: inherit; }
 
+@media screen and (max-width: 640px) {
+  nav {
+    width: 70px;
+    height: 70px; }
 
+  nav .logo {
+    position: relative;
+    margin: 20px auto 20px;
+    width: 50px; } }
+.icon-caidan {
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 70px;
+  font-size: 3rem !important;
+  color: #fff; }
 
-
-@media screen and (max-width: 640px){
-	nav {
-		width: 70px;
-		height: 70px;
-	}
-	nav .logo {
-		position: relative;
-		margin: 20px auto 20px;
-		width: 50px;
-	}
-}
-.icon-caidan{
-	display: block;
-	width: 100%;
-	text-align: center;
-	line-height: 70px;
-	font-size: 3rem !important;
-	color: #fff;
-}
+/*# sourceMappingURL=nav.css.map */
