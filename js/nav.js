@@ -27,7 +27,7 @@ if(!isMB){
 	if(isMenuOpen){
 		$("nav .menu li p,footer").animate( {"opacity":0}, 100, "linear");
 		$("nav .menu li a").animate( {"margin-left":"0"}, 100, "linear");
-		$("nav").animate( {"width":"70px"} , 100, "linear", function () {
+		$("nav").animate( {"width":".7rem"} , 100, "linear", function () {
 			$(".menu li").removeClass('active');
 			$(".menu>li").eq(navIndex).addClass('active');
 		});
@@ -46,7 +46,7 @@ if(!isMB){
 		if(isMenuOpen){
 			$("nav .menu li p,footer").animate( {"opacity":0}, 100, "linear");
 			$("nav .menu li a").animate( {"margin-left":"0"}, 100, "linear");
-			$("nav").animate( {"width":"70px"} , 100, "linear", function () {
+			$("nav").animate( {"width":".7rem"} , 100, "linear", function () {
 				$(".menu li").removeClass('active');
 				$(".menu>li").eq(navIndex).addClass('active');
 			});
@@ -68,7 +68,7 @@ if(!isMB){
 	if(isMenuOpen){
 		$("nav .menu li p,footer").animate( {"opacity":0}, 100, "linear");
 		$("nav .menu li a").animate( {"margin-left":"0"}, 100, "linear");
-		$("nav").animate( {"width":"70px"} , 100, "linear", function () {
+		$("nav").animate( {"width":".7rem"} , 100, "linear", function () {
 			$(".menu li").removeClass('active');
 			$(".menu>li").eq(navIndex).addClass('active');
 		});
@@ -89,7 +89,7 @@ if(!isMB){
 			$("nav .menu li p,footer").animate( {"opacity":0}, 200, "linear");
 			$("nav .menu li a").animate( {"margin-left":"0"}, 200, "linear");
 			$(".icon-caidan").show();
-			$("nav").animate( {"width":"70px","height":"70px"} , 200, "linear", function () {
+			$("nav").animate( {"width":".7rem","height":".7rem"} , 200, "linear", function () {
 				$(".menu li").removeClass('active');
 				$(".menu>li").eq(navIndex).addClass('active');
 			});
