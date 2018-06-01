@@ -1,90 +1,136 @@
-.projectWrap{
-    margin-bottom: .5rem;
-	padding-left: .7rem;
-	overflow: hidden;
-}
-.projectWrap .box{
-	position: relative;
-	float: left;
-	width: 25%;
-	height: 35%;
-	overflow: hidden;
-}
-.boxB{background-color:#54bdc3;}
-.boxY{background-color:#dfd22b;}
-.boxG{background-color:#9fca45;}
-.boxP{background-color:#6f6cb1;}
-.boxR{background-color:#dd4c77;}
+.icon-title {
+  margin-bottom: .3rem;
+  text-align: center;
+  font-weight: normal; }
+  .icon-title i {
+    display: block;
+    font-size: .5rem;
+    margin-bottom: .3rem;
+    color: #E9525D; }
 
-.projectWrap .mask{
-	position: absolute;
-	display: table;
-	top: 0;
-	width: 100.5%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.4);
-	opacity: 0;
-}
-.projectWrap .words{
-	display: table-cell;
-	padding: 0 13%;
-	vertical-align: middle;
-	text-align: center;
+.icon-subtitleT1 {
+  display: inline-block;
+  padding: 0 .3rem;
+  line-height: .4rem;
+  font-size: .3rem;
+  color: #fff;
+  background-color: #E9525D; }
+
+.icon-subtitleT2 {
+  display: block;
+  font-size: .3rem;
+  color: #333; }
+
+.projectWrap {
+  margin-bottom: .5rem;
+  padding-left: .7rem;
+  overflow: hidden; }
+  .projectWrap .box {
+    position: relative;
+    float: left;
+    width: 25%;
+    height: 35%;
+    overflow: hidden; }
+  .projectWrap .mask {
+    position: absolute;
+    display: table;
+    top: 0;
+    width: 100.5%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0; }
+  .projectWrap .words {
+    display: table-cell;
+    padding: 0 13%;
+    vertical-align: middle;
+    text-align: center;
     font-size: .18rem;
     letter-spacing: 1px;
     text-indent: 1px;
     line-height: 1.5em;
-	color: #fff;
-}
-.boxImg{
-	position: absolute;
-	width: 50%;
-	left: 50%;
-	top: 50%;
-	-webkit-transform:translate(-50%,-50%);
-}
-.header{text-align: center;}
-.title{
-    margin: 0 auto .1rem;
-    padding: 3px 0;
-    display: block;
-    width: 1.4rem;
-    text-align: center;
-    background-color: #e9515d;
-    color: #fff;
-}
+    color: #fff; }
 
-.projectDetail img{
-	margin: 0 auto .1rem;
-	width: 100%;
-	max-width: 1200px;
-}
+.boxB {
+  background-color: #54bdc3; }
 
+.boxY {
+  background-color: #dfd22b; }
 
-#backToProject,#toTop{
-    position: fixed;
-    right: .5rem;
-    width: .5rem;
-    height: .5rem;
-    background-color: #ccc;
-    color: #fff;
-    z-index: 99;
-    opacity: 0.8;
-    -moz-transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-#backToProject{
-    bottom: .8rem;
-    padding: 3px 0;
-    font-size: .16rem;
-    text-align: center;
-    line-height: .2rem;
-    letter-spacing: 2px;
-    text-indent: 2px;
-}
-#toTop{
-	display: none;
-    bottom: .3rem;
-    cursor: pointer;
-}
+.boxG {
+  background-color: #9fca45; }
+
+.boxP {
+  background-color: #6f6cb1; }
+
+.boxR {
+  background-color: #dd4c77; }
+
+.boxImg {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%); }
+
+.header {
+  text-align: center; }
+
+.title {
+  margin: 0 auto .1rem;
+  padding: 3px 0;
+  display: block;
+  width: 1.4rem;
+  text-align: center;
+  background-color: #e9515d;
+  color: #fff; }
+
+.projectDetail img {
+  margin: 0 auto .1rem;
+  width: 100%;
+  max-width: 1200px; }
+
+#backToList {
+  bottom: 1rem;
+  padding: 3px 0;
+  font-size: .16rem;
+  text-align: center;
+  line-height: .2rem;
+  letter-spacing: 2px;
+  text-indent: 2px;
+  position: fixed;
+  right: .5rem;
+  width: .5rem;
+  height: .5rem;
+  background-color: #ccc;
+  color: #fff;
+  z-index: 99;
+  opacity: 0.8;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+#toTop {
+  display: none;
+  bottom: .3rem;
+  font-size: .26rem;
+  cursor: pointer;
+  position: fixed;
+  right: .5rem;
+  width: .5rem;
+  height: .5rem;
+  background-color: #ccc;
+  color: #fff;
+  z-index: 99;
+  opacity: 0.8;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+@media screen and (max-width: 640px) {
+  .projectWrap {
+    padding-left: 0; }
+
+  .projectWrap .box {
+    width: 33.33%; } }
+
+/*# sourceMappingURL=project.css.map */

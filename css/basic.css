@@ -82,19 +82,15 @@ input,select,textarea,button {
 	overflow-y: scroll;
 }
 .block {
-	margin: 0 auto 1rem;
+	margin: 0 auto .8rem;
 	user-select: none;
 	-webkit-user-select: none;
-}
-.block, .fullImg{
-    position: relative;
-    width: 100%;
-    max-width: 1920px;
 }
 .block.header{
 	padding: .25rem 0;
 	background-image: url(../images/header_bg.png);
-	background-size: 100% auto;
+	background-size: auto 100%;
+	background-position: center;
 	background-repeat: no-repeat;
 }
 .mainTitle{
@@ -136,6 +132,7 @@ input,select,textarea,button {
 	-webkit-mask-image: -webkit-gradient(linear,center top,center bottom,color-stop(100%,transparent),color-stop(70%,transparent),color-stop(0,#000));
 }
 @media screen and (max-width: 640px) {
+	.block.header{ background-size: auto 60%; }
 	.block-first-l, .block-first-r {
 		top: 0;
 		width: 45%;

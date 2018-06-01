@@ -1,0 +1,111 @@
+@import 'global';
+@import 'icon-title';
+
+.projectWrap {
+    margin-bottom: .5rem;
+	padding-left: .7rem;
+	overflow: hidden;
+	.box {
+		position: relative;
+		float: left;
+		width: 25%;
+		height: 35%;
+		overflow: hidden;
+	}
+	.mask {
+		position: absolute;
+		display: table;
+		top: 0;
+		width: 100.5%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.4);
+		opacity: 0;
+	}
+	.words {
+		display: table-cell;
+		padding: 0 13%;
+		vertical-align: middle;
+		text-align: center;
+		font-size: .18rem;
+		letter-spacing: 1px;
+		text-indent: 1px;
+		line-height: 1.5em;
+		color: #fff;
+	}
+}
+
+.boxB{background-color:#54bdc3;}
+.boxY{background-color:#dfd22b;}
+.boxG{background-color:#9fca45;}
+.boxP{background-color:#6f6cb1;}
+.boxR{background-color:#dd4c77;}
+
+
+
+
+.boxImg{
+	position: absolute;
+	width: 50%;
+	left: 50%;
+	top: 50%;
+	-webkit-transform:translate(-50%,-50%);
+}
+.header{text-align: center;}
+.title{
+    margin: 0 auto .1rem;
+    padding: 3px 0;
+    display: block;
+    width: 1.4rem;
+    text-align: center;
+    background-color: #e9515d;
+    color: #fff;
+}
+
+
+
+
+
+// 二级页面
+.projectDetail img{
+	margin: 0 auto .1rem;
+	width: 100%;
+	max-width: 1200px;
+}
+@mixin projectBtns {
+    position: fixed;
+    right: .5rem;
+    width: .5rem;
+    height: .5rem;
+    background-color: #ccc;
+    color: #fff;
+    z-index: 99;
+    opacity: 0.8;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#backToList{
+    bottom: 1rem;
+    padding: 3px 0;
+    font-size: .16rem;
+    text-align: center;
+    line-height: .2rem;
+    letter-spacing: 2px;
+    text-indent: 2px;
+	@include projectBtns;
+}
+#toTop{
+	display: none;
+    bottom: .3rem;
+	font-size: .26rem;
+    cursor: pointer;
+	@include projectBtns;
+}
+
+
+
+
+@media screen and (max-width: 640px) {
+	.projectWrap { padding-left: 0; }
+	.projectWrap .box { width: 33.33%; }
+}
