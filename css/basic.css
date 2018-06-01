@@ -1,5 +1,9 @@
 /* #reset */
-html{ font-size: 100px; }
+html {
+	font-size: 100px;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-overflow-scrolling: touch;
+}
 @media (min-width: 320px) { html{font-size: 50px;   } }
 @media (min-width: 360px) { html{font-size: 56.2px; } }
 @media (min-width: 375px) { html{font-size: 58.6px; } }
@@ -9,11 +13,6 @@ html{ font-size: 100px; }
 @media (min-width: 504px) { html{font-size: 78.7px; } }
 @media (min-width: 603px) { html{font-size: 94.2px; } }
 @media (min-width: 640px) { html{font-size: 100px;  } }
-
-html {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-overflow-scrolling: touch;
-}
 html,body {
     width:  100%;
     height: 100%;
@@ -75,12 +74,17 @@ input,select,textarea,button {
 
 /* common */
 .wrap{
-	padding-top: .5rem;
 	position: relative;
+	padding-top: .5rem;
 	width: 100%;
 	height: 100%;
 	overflow-x: hidden;
 	overflow-y: scroll;
+}
+.block {
+	margin: 0 auto 1rem;
+	user-select: none;
+	-webkit-user-select: none;
 }
 .block, .fullImg{
     position: relative;
@@ -131,11 +135,6 @@ input,select,textarea,button {
 	right: 0;
 	-webkit-mask-image: -webkit-gradient(linear,center top,center bottom,color-stop(100%,transparent),color-stop(70%,transparent),color-stop(0,#000));
 }
-
-
-
-
-
 @media screen and (max-width: 640px) {
 	.block-first-l, .block-first-r {
 		top: 0;
