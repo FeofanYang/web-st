@@ -1,4 +1,5 @@
 @import 'global';
+@import 'icon-title';
 
 .aboutIcon{ position: absolute; }
 .aboutIcon1{width: 12.5%;left: 3.4%; top: 127%;opacity: 0;}
@@ -11,11 +12,6 @@
 
 
 
-.block {
-	margin: 0 auto .5rem;
-	user-select: none;
-	-webkit-user-select: none;
-}
 // 图片
 .aboutImg {
 	margin: 0 auto;
@@ -34,43 +30,13 @@ article {
 	}
 	b{ color: $titleColor }
 }
-// 标题
-.about-title {
-	margin-bottom: .3rem;
-	text-align: center;
-	font-weight: normal;
-	i {
-		display: block;
-		font-size: .5rem;
-		margin-bottom: .3rem;
-		color: $themeColor;
-	}
-	p{ font-size: .3rem; }
-}
-.subtitleT1 {
-	display: inline-block;
-    padding: 0 .3rem;
-    background-color: $themeColor;
-    color: #fff;
-    line-height: .4rem;
-}
-.subtitleT2 {
-	display: block;
-	color: $titleColor;
-}
 
 
 
 
 
 @media screen and (max-width: 640px) {
-	.block-first-l, .block-first-r {
-		top: 0;
-		width: 45%;
-	}
-	article,.aboutImg {
-		width: 90%;
-	}
+	article, .aboutImg { width: 90%; }
 	article p {
 		line-height: 1.2em;
 		margin-bottom: .2rem;
