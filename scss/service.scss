@@ -1,6 +1,6 @@
 @import 'global';
 @import 'icon-title';
 
-.main_content { width: 60%; }
-.sys_content, .process_content { width: 60%; }
-.main_content, .sys_content, .process_content { margin: 0 auto; }
+.area, .sys, .process { margin: 0 auto; }
+.area { width: 60%; }
+.sys, .process { width: 60%; }
