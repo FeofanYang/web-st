@@ -26,3 +26,37 @@
 .icon_service{width: 12.3%;left: 75.5%;top: 57.4%;}
 .icon_ufo{    width: 7.5%; left: 38.6%;top: 12.6%;}
 .icon_dice{   width: 5%;   left: 83.7%;top: 8.6%; }
+
+
+
+
+
+@media screen and (max-width: 640px) {
+	.bg_index{ display: none; }
+	.bg_indexMB{
+		position: fixed;
+		display: block;
+		left: 0;
+		top: -.5rem;
+		width: 100%;
+		height: 100%;
+	}
+	.brand {
+		position: absolute;
+		width: 48.1%;
+		left: 50%;
+		top: 50%;
+		-webkit-transform:translate(-50%,-50%);
+		-webkit-transform-origin: 50% 50%;
+		transform-origin: 50% 50%;
+		user-select: none;
+	}
+	.iconMenu{ transform: scale(1.5); }
+	.icon_words {  left: 20%;top: 67%;}
+	.icon_service {left: 65%;top: 74%;}
+	.icon_project {left: 76%;top: 62%; }
+	.icon_us {     left: 27%;top: 26%; }
+	.icon_about {  left: 69%;top: 31%; }
+	.icon_dice {   left: 76%;top: 9%; }
+	.icon_join {   left: 57%;top: 18%; }
+}
