@@ -33,10 +33,10 @@
 			<p class="icon-subtitleT1">平面展示类</p>
 		</h5>
 		<ul class="block projectWrap">
-			<li class="box boxB" point="DJ">
-				<img src="images/project/DJ.png" class="boxImg">
+			<li class="box boxB" point="JL">
+				<img src="images/project/JL.png" class="boxImg">
 				<div class="mask">
-					<p class="words">电建</p>
+					<p class="words">君临国际</p>
 				</div>
 			</li>
 			<li class="box boxY" point="JT">
@@ -45,10 +45,10 @@
 					<p class="words">璟棠</p>
 				</div>
 			</li>
-			<li class="box boxG" point="JL">
-				<img src="images/project/JL.png" class="boxImg">
+			<li class="box boxG" point="DJ">
+				<img src="images/project/DJ.png" class="boxImg">
 				<div class="mask">
-					<p class="words">君临国际</p>
+					<p class="words">电建</p>
 				</div>
 			</li>
 			<li class="box boxP" point="LC">
@@ -164,8 +164,20 @@ $('.projectWrap .box').click(function () {
 	for (let i = 1; i <= pointLength; i++) {
 		let curN = i;
 		if(i<=9){ curN = '0' + i; }
-		$('.projectDetail').append("<img src='images/project/"+point+curN+".jpg'>")
+		$('.projectDetail').append(" <img src='images/load.gif' data-src='images/project/"+point+curN+".jpg' class='preload is-loading'> ");
 	}
+	let parent = $('body').find('.preload');
+	parent.each(function(){
+		let self = $(this);
+		if(self.attr('data-src')){
+			let img = new Image();
+			img.src = self.attr('data-src');
+			img.onload = function(){
+				self.attr('src',self.attr('data-src'));
+				self.removeClass('is-loading');
+			};
+		}
+	});
 	$('.projectList').hide();
 	$('.projectDetail').show();
 });

@@ -89,6 +89,9 @@
   width: 100%;
   max-width: 1200px; }
 
+.is-loading {
+  width: 20% !important; }
+
 #backToList {
   bottom: 1rem;
   padding: 3px 0;

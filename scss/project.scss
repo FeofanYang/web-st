@@ -71,6 +71,7 @@
 	width: 100%;
 	max-width: 1200px;
 }
+.is-loading { width: 20% !important; }
 @mixin projectBtns {
     position: fixed;
     right: .5rem;
