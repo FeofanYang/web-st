@@ -30,4 +30,8 @@
 .sys, .process {
   width: 60%; }
 
+@media screen and (max-width: 640px) {
+  .area, .sys, .process {
+    width: 90%; } }
+
 /*# sourceMappingURL=service.css.map */

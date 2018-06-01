@@ -4,3 +4,11 @@
 .area, .sys, .process { margin: 0 auto; }
 .area { width: 60%; }
 .sys, .process { width: 60%; }
+
+
+
+
+
+@media screen and (max-width: 640px) {
+	.area, .sys, .process { width: 90%; }
+}
