@@ -1,0 +1,90 @@
+@import 'global';
+$activeColor: #79c597;
+
+#wordsWrap{
+	position: absolute;
+	left: 20%;
+	width: 60%;
+}
+
+.wordsNav {
+	height: .5rem;
+	font-size: .18rem;
+	> div {
+		padding-top: 3px;
+		float: left;
+		width: 20%;
+		height: 100%;
+		line-height: .5rem;
+		text-align: center;
+		border-bottom: 1px solid $borderColor;
+		cursor: pointer;
+	}
+	.variable {
+		float: left;
+		width: 80%;
+		height: 100%;
+		border-bottom: 1px solid $borderColor;
+		cursor: auto;
+	}
+	.active {
+		padding-top: 0px;
+		border-bottom: none;
+		border-left: 1px solid $borderColor;
+		border-right: 1px solid $borderColor;
+		border-top: 3px solid $activeColor;
+	}
+}
+
+
+.wordsList li{
+	padding: .4rem 0;
+	border-bottom: 1px solid $borderColor;
+	overflow: hidden;
+	a{ color: unset; }
+	.active {
+		color: $activeColor;
+		cursor: pointer;
+		transition: all 0.3s;
+	}
+}
+.left{
+	float: left;
+	width: 10%;
+    padding-right: .2rem;
+	text-align: center;
+    border-right: 1px solid $borderColor;
+}
+.right{
+	float: left;
+	width: 90%;
+    padding-left: .2rem;
+}
+.mainFont{
+	font-size: .2rem;
+	font-weight: 400;
+	margin-bottom: .05rem;
+}
+.subFont{
+	font-size: .14rem;
+	color: #c5c5c5;
+}
+.wordsSummary{
+	margin-top: .15rem;
+	font-size: .14rem;
+	color: #878787;
+}
+
+
+
+
+
+@media screen and (max-width: 640px){
+	#wordsWrap {
+		left: 5%;
+		width: 90%;
+	}
+	.left{ width: 25%; }
+	.right{ width: 75%; }
+	.wordsSummary{ margin-top: .15rem; }
+}

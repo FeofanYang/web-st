@@ -82,11 +82,12 @@ input,select,textarea,button {
 	overflow-y: scroll;
 }
 .block {
-	margin: 0 auto .8rem;
+	margin: 0 auto 1rem;
 	user-select: none;
 	-webkit-user-select: none;
 }
 .block.header{
+	margin: 0 auto .5rem !important;
 	padding: .25rem 0;
 	background-image: url(../images/header_bg.png);
 	background-size: 100% auto;
