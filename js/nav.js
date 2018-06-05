@@ -25,8 +25,8 @@ if(!isMB){
 	// 初始化nav active
 	$(".menu>li").eq(navIndex).addClass('active');
 	if(isMenuOpen){
-		$("nav .menu li p,footer").animate( {"opacity":0}, 100, "linear");
-		$("nav .menu li a").animate( {"margin-left":"0"}, 100, "linear");
+		$(".navText, footer").animate( {"opacity":0}, 100, "linear");
+		$(".i_menu").animate( {"margin-left":"0"}, 100, "linear");
 		$("nav").animate( {"width":".7rem"} , 100, "linear", function () {
 			$(".menu li").removeClass('active');
 			$(".menu>li").eq(navIndex).addClass('active');
@@ -35,17 +35,17 @@ if(!isMB){
 
 	// 鼠标经过nav
 	$("body").on("mouseover", "nav", function () {
-		$("nav .menu li p,footer, nav .menu li a, nav").finish();
-		$("nav .menu li p,footer").animate( {"opacity":1}, 100, "linear");
-		$("nav .menu li a").animate( {"margin-left":"20px"}, 100, "linear");
+		$(".navText, footer, .i_menu, nav").finish();
+		$(".navText, footer").animate( {"opacity":1}, 100, "linear");
+		$(".i_menu").animate( {"margin-left":"20px"}, 100, "linear");
 		$("nav").animate( {"width":"220px"}, 100, "linear", function(){
 			isMenuOpen = true;
 		});
 	});
 	$("body").on("mouseleave", "nav", function () {
 		if(isMenuOpen){
-			$("nav .menu li p,footer").animate( {"opacity":0}, 100, "linear");
-			$("nav .menu li a").animate( {"margin-left":"0"}, 100, "linear");
+			$(".navText, footer").animate( {"opacity":0}, 100, "linear");
+			$(".i_menu").animate( {"margin-left":"0"}, 100, "linear");
 			$("nav").animate( {"width":".7rem"} , 100, "linear", function () {
 				$(".menu li").removeClass('active');
 				$(".menu>li").eq(navIndex).addClass('active');
@@ -66,8 +66,8 @@ if(!isMB){
 	// 初始化nav active
 	$(".menu>li").eq(navIndex).addClass('active');
 	if(isMenuOpen){
-		$("nav .menu li p,footer").animate( {"opacity":0}, 100, "linear");
-		$("nav .menu li a").animate( {"margin-left":"0"}, 100, "linear");
+		$(".navText, footer").animate( {"opacity":0}, 100, "linear");
+		$(".i_menu").animate( {"margin-left":"0"}, 100, "linear");
 		$("nav").animate( {"width":".7rem"} , 100, "linear", function () {
 			$(".menu li").removeClass('active');
 			$(".menu>li").eq(navIndex).addClass('active');
@@ -76,9 +76,9 @@ if(!isMB){
 
 	// 鼠标经过nav
 	$("nav").click(function () {
-		$("nav .menu li p,footer, nav .menu li a, nav").finish();
-		$("nav .menu li p,footer").animate( {"opacity":1}, 200, "linear");
-		$("nav .menu li a").animate( {"margin-left":"20px"}, 200, "linear");
+		$(".navText, footer, .i_menu, nav").finish();
+		$(".navText, footer").animate( {"opacity":1}, 200, "linear");
+		$(".i_menu").animate( {"margin-left":"20px"}, 200, "linear");
 		$(".icon-caidan").hide();
 		$("nav").animate( {"width":"220px","height":"100%"}, 200, "linear", function(){
 			isMenuOpen = true;
@@ -86,8 +86,8 @@ if(!isMB){
 	})
 	$(".wrap").click(function () {
 		if(isMenuOpen){
-			$("nav .menu li p,footer").animate( {"opacity":0}, 200, "linear");
-			$("nav .menu li a").animate( {"margin-left":"0"}, 200, "linear");
+			$(".navText, footer").animate( {"opacity":0}, 200, "linear");
+			$(".i_menu").animate( {"margin-left":"0"}, 200, "linear");
 			$(".icon-caidan").show();
 			$("nav").animate( {"width":".7rem","height":".7rem"} , 200, "linear", function () {
 				$(".menu li").removeClass('active');
