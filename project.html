@@ -145,6 +145,7 @@ $('.projectWrap .box').bind('mouseout',function () {
 $('.projectDetail').hide();
 // 选择项目
 $('.projectWrap .box').click(function () {
+	$('.projectDetail').animate( {scrollTop: 0}, 10);
 	let point = $(this).attr("point");
 	let pointLength;
 	if(point=="DJ") { pointLength = 42; }
