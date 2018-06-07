@@ -50,6 +50,28 @@
     line-height: 1.5em;
     color: #fff; }
 
+.h5Wrap .box {
+  position: relative;
+  margin-bottom: .3rem; }
+.h5Wrap iframe {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  width: 3.2rem;
+  height: 5.7rem; }
+.h5Wrap img {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  -webkit-transform: translateY(-50%);
+  width: 2rem; }
+@media screen and (max-width: 640px) {
+  .h5Wrap iframe {
+    margin: 0 .3rem; }
+  .h5Wrap img {
+    left: unset;
+    right: .3rem; } }
+
 .boxB {
   background-color: #54bdc3; }
 
@@ -136,4 +158,4 @@
   .projectWrap .box {
     height: 20%; } }
 
-/*# sourceMappingURL=preject.css.map */
+/*# sourceMappingURL=project.css.map */
