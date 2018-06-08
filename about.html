@@ -99,24 +99,23 @@
 		</h5>
 		<img src="images/about/construction.png" class="aboutImg construction">
 	</div>
-	<img src="images/about/aboutIcon1.png" class="aboutIcon1 aboutIcon">
-	<img src="images/about/aboutIcon2.png" class="aboutIcon2 aboutIcon">
-	<img src="images/about/aboutIcon3.png" class="aboutIcon3 aboutIcon">
-	<img src="images/about/aboutIcon4.png" class="aboutIcon4 aboutIcon">
-	<img src="images/about/aboutIcon5.png" class="aboutIcon5 aboutIcon">
 </div>
+<img src="images/about/aboutIcon1.png" class="aboutIcon1 aboutIcon">
+<img src="images/about/aboutIcon2.png" class="aboutIcon2 aboutIcon">
+<img src="images/about/aboutIcon3.png" class="aboutIcon3 aboutIcon">
+<img src="images/about/aboutIcon4.png" class="aboutIcon4 aboutIcon">
+<img src="images/about/aboutIcon5.png" class="aboutIcon5 aboutIcon">
 
 
 </body>
 <script>
 // 指定页面索引
 var navIndex = 1;
-$('.wrap').bind('scroll', function() {
+$(window).bind('scroll', function() {
 	var icon1 = true, icon2 = true, icon3 = true, icon4 = true, icon5 = true;
-	var scrollT =  $(".wrap").scrollTop();
-	var h = $(".wrap").height();
-	var pecent = parseInt(($(".wrap").scrollTop() / $(".wrap").height())*100);
-	// console.log(pecent); 
+	var scrollT =  $("body").scrollTop();
+	var h = $("body").height();
+	var pecent = parseInt(($("body").scrollTop() / $("body").height())*100);
 	if(pecent > 77 && icon1){
 		$(".aboutIcon1").addClass("animated myZoomIn");
 		icon1 = false;
@@ -126,7 +125,7 @@ $('.wrap').bind('scroll', function() {
 		icon2 = false;
 	}
 	if(pecent > 190 && icon3){
-		$(".aboutIcon3").addClass("myRotate infinite");
+		$(".aboutIcon3").addClass("animated myRotate infinite");
 		icon3 = false;
 	}
 	if(pecent > 280 && icon4){
