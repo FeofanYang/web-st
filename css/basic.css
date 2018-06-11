@@ -141,6 +141,12 @@ input,select,textarea,button {
 		width: 45%;
 	}
 }
+.animated0p5{
+	-webkit-animation-duration: .5s;
+	animation-duration: .5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
 .infinite {
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
@@ -148,6 +154,14 @@ input,select,textarea,button {
 .myZoomIn {
     -webkit-animation-name: myZoomIn;
     animation-name: myZoomIn;
+}
+.delay0p5{
+	animation-delay: .5s;
+	-webkit-animation-delay: .5s;
+}
+.delay1{
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
 }
 @-webkit-keyframes myZoomIn {
     0% {
