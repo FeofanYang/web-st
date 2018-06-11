@@ -120,15 +120,24 @@
 		</h5>
 		<ul class="block h5Wrap">
 			<div class="box">
-				<iframe src="http://h5.stfx2017.com/chaox2/" frameborder="0"></iframe>
+				<div class="frameWrap">
+					<iframe src="" frameborder="0" data="http://h5.stfx2017.com/chaox2/"></iframe>
+					<div class="iframeMask">点击播放</div>
+				</div>
 				<img src="images/project/QRchaox.png">
 			</div>
 			<div class="box">
-				<iframe src="http://h5.stfx2017.com/xc/wls/" frameborder="0"></iframe>
+				<div class="frameWrap">
+					<iframe src="" frameborder="0" data="http://h5.stfx2017.com/xc/wls/"></iframe>
+					<div class="iframeMask">点击播放</div>
+				</div>
 				<img src="images/project/QRxc-wls.png">
 			</div>
 			<div class="box">
-				<iframe src="http://h5.stfx2017.com/englishTest/" frameborder="0"></iframe>
+				<div class="frameWrap">
+					<iframe src="" frameborder="0" data="http://h5.stfx2017.com/englishTest/"></iframe>
+					<div class="iframeMask">点击播放</div>
+				</div>
 				<img src="images/project/QRenglishTest.png">
 			</div>
 		</ul>
@@ -174,7 +183,7 @@ $('.projectWrap .box').click(function () {
 	else if(point=="XSW") { pointLength = 6; }
 	else if(point=="XC") { pointLength = 47; }
 	else if(point=="YST") { pointLength = 38; }
-	else if(point=="ZA") { pointLength = 6; }	
+	else if(point=="ZA") { pointLength = 6; }
 	$('.projectDetail img').remove();
 	for (let i = 1; i <= pointLength; i++) {
 		let curN = i;
@@ -195,6 +204,13 @@ $('.projectWrap .box').click(function () {
 	});
 	$('.projectList').hide();
 	$('.projectDetail').show();
+});
+$(".iframeMask").click(function () {
+	$(".h5Wrap iframe").attr("src","");
+	$(".iframeMask").show();
+	let curSrc = $(this).prev().attr('data');
+	$(this).prev().attr('src',curSrc);
+	$(this).hide();
 });
 // 两个按钮
 $('#backToList').click(function () {
