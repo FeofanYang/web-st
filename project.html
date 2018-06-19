@@ -28,7 +28,7 @@
 			<p>作</p>
 		</div>
 	</div>
-	<div class="block">
+	<div class="block" id="design">
 		<h5 class="icon-title">
 			<p class="icon-subtitleT1">平面展示类</p>
 		</h5>
@@ -113,7 +113,32 @@
 			</li>
 		</ul>
 	</div>
-	<div class="block">
+	<div class="block" id="picture">
+		<h5 class="icon-title">
+			<p class="icon-subtitleT1">手绘插画类</p>
+		</h5>
+		<ul class="block projectWrap">
+			<li class="box boxB" point="BGG">
+				<img src="images/project/ZA.png" class="boxImg">
+				<div class="mask">
+					<p class="words">中建铂公馆</p>
+				</div>
+			</li>
+			<li class="box boxY" point="xt">
+				<img src="images/project/ZA.png" class="boxImg">
+				<div class="mask">
+					<p class="words">小T</p>
+				</div>
+			</li>
+			<li class="box boxG" point="tb">
+				<img src="images/project/ZA.png" class="boxImg">
+				<div class="mask">
+					<p class="words">桃宝亲子乐园</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="block" id="newmedia">
 		<h5 class="icon-title">
 			<p class="icon-subtitleT1">新媒体互动</p>
 		</h5>
@@ -149,7 +174,7 @@
 	</div>
 </div>
 <div class="wrap projectDetail">
-	<button id="backToList">返回<br>盛作</button>
+	<a href="#newmedia"><button id="backToList">返回<br>盛作</button></a>
 	<button id="toTop">↑</button>
 </div>
 
@@ -157,7 +182,7 @@
 </body>
 <script>
 // 指定页面索引
-var navIndex = 3;
+var navIndex = 3, project_kind;
 $('.projectWrap .box').bind('mouseover',function () {
 	$('.active').removeClass('active');
 	$('.projectWrap .box .mask,.projectWrap .box .boxImg').finish();
@@ -172,8 +197,23 @@ $('.projectWrap .box').bind('mouseout',function () {
 
 $('.projectDetail').hide();
 // 选择项目
+$('#design .box').click(function () {
+	project_kind = 'design';
+});
+$('#picture .box').click(function () {
+	project_kind = 'picture';
+});
 $('.projectWrap .box').click(function () {
-	$('.projectDetail').animate( {scrollTop: 0}, 10);
+	$('body').animate( {scrollTop: 0}, 1);
+	$('#backToList').parent().attr('href','#'+project_kind);
+	// 检测按钮
+	$(window).bind('scroll', function() {
+		var scrollT =  $("body").scrollTop();
+		var h = $("body").height();
+		var pecent = parseInt(($("body").scrollTop() / $("body").height())*100);
+		if(pecent > 50){ $("#toTop").show(); }
+		else{ $("#toTop").hide(); }
+	});
 	let point = $(this).attr("point");
 	let pointLength;
 	if(point=="DJ") { pointLength = 42; }
@@ -189,6 +229,9 @@ $('.projectWrap .box').click(function () {
 	else if(point=="XC") { pointLength = 47; }
 	else if(point=="YST") { pointLength = 38; }
 	else if(point=="ZA") { pointLength = 6; }
+	else if(point=="BGG") { pointLength = 8; }
+	else if(point=="xt") { pointLength = 8; }
+	else if(point=="tb") { pointLength = 1; }
 	$('.projectDetail img').remove();
 	for (let i = 1; i <= pointLength; i++) {
 		let curN = i;
@@ -219,19 +262,12 @@ $(".iframeMask").click(function () {
 });
 // 两个按钮
 $('#backToList').click(function () {
+	$(window).unbind('scroll');
 	$('.projectDetail').hide();
 	$('.projectList').show();
 });
 $('#toTop').click(function () {
-	$('.projectDetail').animate( {scrollTop: 0}, 500);
-});
-// 检测按钮
-$('.projectDetail').bind('scroll', function() {
-	var scrollT =  $(".projectDetail").scrollTop();
-	var h = $(".projectDetail").height();
-	var pecent = parseInt(($(".projectDetail").scrollTop() / $(".projectDetail").height())*100);
-	if(pecent > 50){ $("#toTop").show(); }
-	else{ $("#toTop").hide(); }
+	$('body').animate( {scrollTop: 0}, 500);
 });
 </script>
 <script src="js/nav.js"></script>
