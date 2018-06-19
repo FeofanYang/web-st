@@ -33,17 +33,28 @@
 		color: #fff;
 	}
 }
+
+
 .h5Wrap{
 	.box{
 		position: relative;
 		margin-bottom: .3rem;
 	}
-	.frameWrap{
+	.iphone-border {
 		position: relative;
 		margin: 0 auto;
 		display: block;
-		width: 3.2rem;
-		height: 5.7rem;
+		width: 3.6rem;
+		height: 7.2rem;
+		background-image: url(../images/project/iphone-border.png);
+		background-size: 100% 100%;
+	}
+	.frameWrap {
+		position: absolute;
+		top: 11%;
+		left: 5%;
+		width: 90%;
+		height: 78%;
 	}
 	iframe {
 		position: absolute;
@@ -58,7 +69,7 @@
 		text-align: center;
 		font-size: .25rem;
 		color: #fff;
-		background-color: rgba(0,0,0,0.5);
+		background-color: rgba(0,0,0,1);
 	}
 	img {
 		position: absolute;
@@ -68,7 +79,7 @@
 		width: 2rem;
 	}
 	@media screen and (max-width: 640px) {
-		.frameWrap{ margin: 0 .3rem; }
+		.iphone-border{ margin: 0 .3rem; }
 		img{ left:unset;right: .3rem; }
 	}
 }
