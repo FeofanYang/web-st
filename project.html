@@ -16,7 +16,6 @@
 <body>
 
 
-
 <div class="wrap projectList">
 	<div class="block header">
 		<div class="mainTitle">
@@ -32,111 +31,13 @@
 		<h5 class="icon-title">
 			<p class="icon-subtitleT1">平面展示类</p>
 		</h5>
-		<ul class="block projectWrap">
-			<li class="box boxB" point="JL">
-				<img src="images/project/JL.png" class="boxImg">
-				<div class="mask">
-					<p class="words">君临国际</p>
-				</div>
-			</li>
-			<li class="box boxY" point="JT">
-				<img src="images/project/JT.png" class="boxImg">
-				<div class="mask">
-					<p class="words">璟棠</p>
-				</div>
-			</li>
-			<li class="box boxG" point="DJ">
-				<img src="images/project/DJ.png" class="boxImg">
-				<div class="mask">
-					<p class="words">电建</p>
-				</div>
-			</li>
-			<li class="box boxP" point="LC">
-				<img src="images/project/LC.png" class="boxImg">
-				<div class="mask">
-					<p class="words">龙城天第</p>
-				</div>
-			</li>
-			<li class="box boxY" point="RC">
-				<img src="images/project/RC.png" class="boxImg">
-				<div class="mask">
-					<p class="words">融创</p>
-				</div>
-			</li>
-			<li class="box boxB" point="TR">
-				<img src="images/project/TR.png" class="boxImg">
-				<div class="mask">
-					<p class="words">庭瑞</p>
-				</div>
-			</li>
-			<li class="box boxR" point="GX">
-				<img src="images/project/GX.png" class="boxImg">
-				<div class="mask">
-					<p class="words">万汇城</p>
-				</div>
-			</li>
-			<li class="box boxG" point="WY">
-				<img src="images/project/WY.png" class="boxImg">
-				<div class="mask">
-					<p class="words">万盈国际</p>
-				</div>
-			</li>
-			<li class="box boxB" point="XY">
-				<img src="images/project/XY.png" class="boxImg">
-				<div class="mask">
-					<p class="words">玺樾</p>
-				</div>
-			</li>
-			<li class="box boxY" point="XSW">
-				<img src="images/project/XSW.png" class="boxImg">
-				<div class="mask">
-					<p class="words">香水湾</p>
-				</div>
-			</li>
-			<li class="box boxG" point="XC">
-				<img src="images/project/XC.png" class="boxImg">
-				<div class="mask">
-					<p class="words">新城</p>
-				</div>
-			</li>
-			<li class="box boxP" point="YST">
-				<img src="images/project/YST.png" class="boxImg">
-				<div class="mask">
-					<p class="words">院士廷</p>
-				</div>
-			</li>
-			<li class="box boxY" point="ZA">
-				<img src="images/project/ZA.png" class="boxImg">
-				<div class="mask">
-					<p class="words">左岸天地</p>
-				</div>
-			</li>
-		</ul>
+		<ul class="block projectWrap"></ul>
 	</div>
 	<div class="block" id="picture">
 		<h5 class="icon-title">
 			<p class="icon-subtitleT1">手绘插画类</p>
 		</h5>
-		<ul class="block projectWrap">
-			<li class="box boxB" point="BGG">
-				<img src="images/project/ZA.png" class="boxImg">
-				<div class="mask">
-					<p class="words">中建铂公馆</p>
-				</div>
-			</li>
-			<li class="box boxY" point="xt">
-				<img src="images/project/ZA.png" class="boxImg">
-				<div class="mask">
-					<p class="words">小T</p>
-				</div>
-			</li>
-			<li class="box boxG" point="tb">
-				<img src="images/project/ZA.png" class="boxImg">
-				<div class="mask">
-					<p class="words">桃宝亲子乐园</p>
-				</div>
-			</li>
-		</ul>
+		<ul class="block projectWrap"></ul>
 	</div>
 	<div class="block" id="newmedia">
 		<h5 class="icon-title">
@@ -173,7 +74,7 @@
 		</ul>
 	</div>
 </div>
-<div class="wrap projectDetail">
+<div class="wrap projectDetail hidden">
 	<a href="#newmedia"><button id="backToList">返回<br>盛作</button></a>
 	<button id="toTop">↑</button>
 </div>
@@ -181,6 +82,56 @@
 
 </body>
 <script>
+var pictureData = [
+	['BGG','中建·铂公馆',8],
+	['xt','小T',8],
+	['tb','桃宝亲子乐园',1],
+];
+var designData = [
+	['XCMY','新城·明昱',4 ],
+	['HFSJ','华发四季',5 ],
+	['XY','新城玺樾',14],
+	['XCHJ','新城汇隽',4 ],
+	['FLJXYC','富力·金禧悦城',5 ],
+	['FHQ','国家网络安全基地孵化器',4 ],
+	['ZJJZZX','中建·荆州之星',11],
+	['YYSJYJW','远洋世界·悦璄湾',7 ],
+	['GX','万汇城',4 ],
+	['ZA','左岸天地',6 ],
+	['XSW','香水湾',6 ],
+	['BBTJQH','百步亭·金桥汇',3 ],
+	['ZJGGZX','中建·光谷之星',4 ],
+	['RC','融创·天城中心',36],
+	['JL','君临国际',7 ],
+	['WY','万盈国际',5 ],
+	['ZJZHTD','中建·智汇天地',6 ],
+	['JT','新城璟棠',36],
+	['DJ','电建·洺悦御府',42],
+	['LC','龙城天第',27],
+	['TR','庭瑞·方洲ONE',48],
+	['XC','新城玖璟台',47],
+	['YST','富力·院士廷',38],
+];
+for (let index = 0; index < pictureData.length; index++) {
+	$("#picture ul").append("<li class='box' point="+pictureData[index][0]+" length="+pictureData[index][2]+"><img src='images/project/"+pictureData[index][0]+".png' class='boxImg'><div class='mask'><p class='words'>"+pictureData[index][1]+"</p></div></li>");
+}
+for (let index = 0; index < designData.length; index++) {
+	$("#design ul").append("<li class='box' point="+designData[index][0]+" length="+designData[index][2]+"><img src='images/project/"+designData[index][0]+".png' class='boxImg'><div class='mask'><p class='words'>"+designData[index][1]+"</p></div></li>");
+}
+// 添加颜色
+var colorData;
+$('.projectWrap .box').each(function (index) {
+	let thisI = $(this).index();
+	if(thisI%8 == 0){ colorData = 'boxB'; }
+	else if(thisI%8 == 1){ colorData = 'boxY'; }
+	else if(thisI%8 == 2){ colorData = 'boxG'; }
+	else if(thisI%8 == 3){ colorData = 'boxP'; }
+	else if(thisI%8 == 4){ colorData = 'boxY'; }
+	else if(thisI%8 == 5){ colorData = 'boxB'; }
+	else if(thisI%8 == 6){ colorData = 'boxR'; }
+	else if(thisI%8 == 7){ colorData = 'boxG'; }
+	$(this).addClass(colorData);
+});
 // 指定页面索引
 var navIndex = 3, project_kind;
 $('.projectWrap .box').bind('mouseover',function () {
@@ -195,7 +146,7 @@ $('.projectWrap .box').bind('mouseout',function () {
 	$('.active').children('.boxImg').animate({'width':'-=50'}, 500);
 });
 
-$('.projectDetail').hide();
+
 // 选择项目
 $('#design .box').click(function () {
 	project_kind = 'design';
@@ -215,23 +166,7 @@ $('.projectWrap .box').click(function () {
 		else{ $("#toTop").hide(); }
 	});
 	let point = $(this).attr("point");
-	let pointLength;
-	if(point=="DJ") { pointLength = 42; }
-	else if(point=="JT") { pointLength = 36; }
-	else if(point=="JL") { pointLength = 7; }
-	else if(point=="LC") { pointLength = 27; }
-	else if(point=="RC") { pointLength = 36; }
-	else if(point=="TR") { pointLength = 48; }
-	else if(point=="GX") { pointLength = 4; }
-	else if(point=="WY") { pointLength = 5; }
-	else if(point=="XY") { pointLength = 14; }
-	else if(point=="XSW") { pointLength = 6; }
-	else if(point=="XC") { pointLength = 47; }
-	else if(point=="YST") { pointLength = 38; }
-	else if(point=="ZA") { pointLength = 6; }
-	else if(point=="BGG") { pointLength = 8; }
-	else if(point=="xt") { pointLength = 8; }
-	else if(point=="tb") { pointLength = 1; }
+	let pointLength = $(this).attr("length");
 	$('.projectDetail img').remove();
 	for (let i = 1; i <= pointLength; i++) {
 		let curN = i;
