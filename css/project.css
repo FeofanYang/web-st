@@ -73,23 +73,29 @@
   height: 100%; }
 .h5Wrap .iframeMask {
   position: absolute;
+  padding-top: 1.8rem;
   width: 100%;
   height: 100%;
-  line-height: 5.7rem;
   text-align: center;
   font-size: .25rem;
   color: #fff;
   background-color: black; }
-.h5Wrap img {
+.h5Wrap .QR-border {
   position: absolute;
+  width: 2rem;
   top: 50%;
   left: 70%;
   -webkit-transform: translateY(-50%);
   width: 2rem; }
+.h5Wrap .QR-border img {
+  width: 100%; }
+.h5Wrap .hint {
+  font-size: .24rem;
+  text-align: center; }
 @media screen and (max-width: 640px) {
   .h5Wrap .iphone-border {
     margin: 0 .3rem; }
-  .h5Wrap img {
+  .h5Wrap .QR-border {
     left: unset;
     right: .3rem; } }
 
